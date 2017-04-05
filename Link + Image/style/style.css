@@ -1,0 +1,41 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{ 
+	width: 1000px;
+	font-size: 18px;	
+ }
+.product {
+	width: 500px;
+	height: 500px;
+	float: left;
+ }
+ .image_product img{
+ 	width: 300px;
+ 	height: 300px;
+ }
+ .name_product {
+ 	display: block;
+ }
+ 
+ /*--------------------------------------------*/
+
+ /*-------CHI TIET SAN PHAM---------------*/
+ #wrap {
+ 	width: 100%;
+ 	margin: 0 auto;
+ 	padding-top: 50px;
+ }
+ .image img {
+ 	width: 500px;
+ 	height: auto;
+ 	float: left;
+
+ }
+ .ten_sp {
+ 	font-size: 24px;
+ 	font-weight: bold;
+ 	text-transform: uppercase;
+ 	color: red;
+ }

@@ -12,7 +12,8 @@
  body {
  	font-size: 18px;
  	font-family: sans-serif, helvetica, arial, tahoma;
- 	/*background-color: #333333;*/
+ 	/*background-image: url("../images/body_bg_1.jpg");*/
+ 	background-color: #5b5a5a;
  	box-sizing: border-box;
  }
 #container {
@@ -42,7 +43,6 @@
 #menu ul {
 	float: right;
 	padding-right: 20px;
-
 }
 #menu ul li{
  	line-height: 48px;
@@ -63,14 +63,10 @@
 	background-color: #5ec179;
 	box-shadow: 0px 2px 7px #666666;
 	/*float: left;*/
-
 }
 #main_menu ul {
 	font-size: .8em;
 	text-align: center
-}
-#main_menu > ul > li {
-	line-height: 50px;
 
 }
 #main_menu  > ul > li {
@@ -79,6 +75,7 @@
 	float: left;
  	padding: 0px 20px;
  	position: relative;
+ 	line-height: 50px;
 }
 
 #main_menu li:hover .sub_menu {
@@ -93,7 +90,6 @@
 	position: absolute;
 	display: none;
 	transition: 2s ease-in-out;
-
 }
 .sub_menu li {
 	border-bottom: 1px solid white;
@@ -121,36 +117,88 @@
 	overflow: hidden;
 }
 .title {
+	text-transform: uppercase;
 	height: 80px;
-	
+	text-decoration: none;
+	transition: all ease-in-out;
 }
 .title h1 {
-	color: #333333;
+	color: #f1f1f1;
 	line-height: 80px;
+}
+.title h1:hover {
+	color: #fff;
+	text-decoration: underline;
 }
 #banner {
 	width: 100%;
 	height: 400px;
 	overflow: hidden;
-	box-shadow: 1px 7px 10px #333;
+	background: #252525; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#252525, #1a1a1a); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#252525, #1a1a1a); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#252525, #1a1a1a); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#252525, #1a1a1a); /* Standard syntax */
+
 }
-#banner img {
-	display: block;
-	
+#banner .img_banner{
+	min-width: 699px;
+	max-width: 700px;
 	transition: 2s ease-in-out;
+	overflow: hidden;
+	float: left;
 }
-#banner:hover img{
+.img_banner img {
+	width: 100%;
+}
+.right_banner {
+	display: block;
+	float: right;
+	margin-right: 70px;
+	margin-top: 100px;
+	
+	text-align: center;
+	color: white;
+}
+.right_banner  .new_banner{
+	color: green;
+	text-transform: uppercase;
+}
+.name_prod_banner {
+	font-size: 2em;
+	color: white;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 4px;
+}
+.right_banner h3 {
+	font-size: 1.5em;
+	color: #838383;
+}
+.right_banner p {
+	padding: 20px 0px 45px 0px;
+	font-size: 14px;
+}
+.right_banner a {
+	padding: 15px 15px;
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+.detail_prod:hover {
+	background-color: pink;
+}
+/*#banner:hover img{
 
 	transform: scale(1.2);
-}
-
+}*/
 #sale {
 	margin-top: 15px;
 	width: 100%;
 	overflow: hidden;
 }
 /*============================================================*/
-#content {
+/*#content {
 	width: 100%;
 	
 }
@@ -196,27 +244,136 @@
 .prod-list ul li:hover {
 	border: 1px solid pink;
 }
+*/
+/*=============================================/*/
 
+#best_price {
+	width: 100%;
+	height: 120px;
+	
+	position: relative;
+}
+#best_price{
+	background: #252525; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#252525, #1a1a1a); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#252525, #1a1a1a); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#252525, #1a1a1a); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#252525, #1a1a1a); /* Standard syntax */
 
+}
+.sale_bg {
+	width: 100px;
+	height: 100%;
+	top: -10px;
+	left: -10px;
+	background-image: url("../images/unnamed.png") ;
+	background-repeat: no-repeat;
+	position: absolute;
+}
+.product_sale {
+	margin-left: 200px;
+}
+.product_sale_name {
+	color: grey;
+    text-transform: uppercase;
+    text-align: center;
+   
+ 	height: 120px;
+ 	float: left;
+ 	padding-top: 20px;
+ 
+}
+.sale_id {
+	display: block;
+    font-size: 3em;
+    color: white;
+    font-weight: bold;
+    /* margin-top: 10px; */
+}
+.sale_name {
+	font-size: 1.3em;
+	color: grey;
+}
+.product_sale_img {
+	display: inline-block;
+}
+.buy_now {
+	float: right;
+    height: 50px;
+    margin-top: 50px;
+    margin-right: 120px;
+}
+.buy_now a {
+	padding: 20px;
+	border-radius: 5px;
+	font-weight: bold;
+	background-color: #56be71;
+	text-transform: uppercase;
+	color: white;
+}
+.buy_now:hover a {
+	background-color: #24e857;
+}
+/*====================================*/
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#list_product {
+	width: 100%;
+	margin-top: 20px;
+	background: #252525; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#252525, #1a1a1a); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#252525, #1a1a1a); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#252525, #1a1a1a); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#252525, #1a1a1a); /* Standard syntax */
+}
+#list_product h1 {
+	width: 100%
+	height: 40px;
+	padding: 10px;
+	color: red;
+}
+.id_product {
+	width: 196px;
+	box-sizing: border-box;
+	text-align: center;
+    overflow: hidden;
+    height: auto;
+    /*min-height: 190px;*/
+    position: relative;
+    display: inline-block;
+    margin: 0px -9px 0px 9px;
+}
+.id_product:hover img{
+	transform: scale(1.1);
+	color: pink;
+}
+.id_product:hover a {
+	color: red;
+}
+.image_prod {
+	width: 180px;
+	height: 180px;
+	overflow: hidden;
+}
+.image_prod img{
+	max-width: 180px;
+	transition: .5s ease-in-out;
+	
+}
+.price_prod {
+	color: white;
+}
+.name_prod {
+	width: 100%;
+	height: 50px;
+	line-height: 40px;
+	color: white;
+	text-align: center;
+	
+}
+.name_prod a {
+	color: #f1f1f1;
+	text-transform: uppercase;
+}
 
 
 

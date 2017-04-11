@@ -326,7 +326,6 @@
 /*=============================================================?*/
 #footer {
 	font-family: 'timenewroman';
-
 	width: 100%;
 	min-height: 100px;
 	margin-top: 50px;
@@ -350,7 +349,6 @@
     background: linear-gradient(pink, #f1f1f1);
 }
 #address{
-	
 	padding: 10px;
 	}
 .add {

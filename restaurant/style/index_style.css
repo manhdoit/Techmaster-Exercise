@@ -13,7 +13,7 @@
  	font-size: 18px;
  	font-family: sans-serif, helvetica, arial, tahoma;
  	/*background-image: url("../images/body_bg_1.jpg");*/
- 	background-color: #5b5a5a;
+ 	background-color: #f1f1f1;
  	box-sizing: border-box;
  }
 #container {
@@ -62,6 +62,7 @@
 	border-radius: 0 0 5px 5px;
 	background-color: #5ec179;
 	box-shadow: 0px 2px 7px #666666;
+	z-index: 1000;
 	/*float: left;*/
 }
 #main_menu ul {
@@ -90,6 +91,7 @@
 	position: absolute;
 	display: none;
 	transition: 2s ease-in-out;
+	z-index: 1000;
 }
 .sub_menu li {
 	border-bottom: 1px solid white;
@@ -112,9 +114,8 @@
 /*=================================================================*/
 #digital-store {
 	margin-top: 20px;
-	width: 100%;
-	height: 500px;
-	overflow: hidden;
+    width: 100%;
+    height: 500px;
 }
 .title {
 	text-transform: uppercase;
@@ -123,22 +124,24 @@
 	transition: all ease-in-out;
 }
 .title h1 {
-	color: #f1f1f1;
+	color: red;
 	line-height: 80px;
 }
 .title h1:hover {
-	color: #fff;
 	text-decoration: underline;
 }
 #banner {
 	width: 100%;
-	height: 400px;
-	overflow: hidden;
-	background: #252525; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(#252525, #1a1a1a); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(#252525, #1a1a1a); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(#252525, #1a1a1a); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(#252525, #1a1a1a); /* Standard syntax */
+    height: 400px;
+    overflow: hidden;
+    border: 1px solid pink;
+    border-radius: 5px;
+    box-shadow: 1px 0px 10px 0px #ca9999;
+	/*background: #252525;*/ 
+    /*background: -webkit-linear-gradient(#252525, #1a1a1a); 
+    background: -o-linear-gradient(#252525, #1a1a1a); 
+    background: -moz-linear-gradient(#252525, #1a1a1a); 
+    background: linear-gradient(#252525, #1a1a1a); /*/
 
 }
 #banner .img_banner{
@@ -156,20 +159,19 @@
 	float: right;
 	margin-right: 70px;
 	margin-top: 100px;
-	
 	text-align: center;
-	color: white;
+
 }
 .right_banner  .new_banner{
 	color: green;
 	text-transform: uppercase;
 }
 .name_prod_banner {
-	font-size: 2em;
-	color: white;
+	font-size: 2.5em;
 	text-transform: uppercase;
 	font-weight: bold;
 	letter-spacing: 4px;
+
 }
 .right_banner h3 {
 	font-size: 1.5em;
@@ -182,70 +184,20 @@
 .right_banner a {
 	padding: 15px 15px;
     text-align: center;
-    background-color: #ffffff;
+    color: white;
+    background-color: #fd0000;
     border-radius: 5px;
 }
 .detail_prod:hover {
 	background-color: pink;
 }
-/*#banner:hover img{
 
-	transform: scale(1.2);
-}*/
 #sale {
 	margin-top: 15px;
 	width: 100%;
 	overflow: hidden;
 }
-/*============================================================*/
-/*#content {
-	width: 100%;
-	
-}
-#content h3 {
-	text-align: center;
-	margin: 20px;
-	font-size: 2em;
-	color: #333333;
-}
-.prod-list {
-	width: 100%;
-}
-.prod-list ul {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-	width: 100%;
-	overflow: hidden;
-}
-.prod-list ul li {
-	width: 190px;
-	max-width: 192px;
-	margin-bottom: 20px;
-	text-align: center;
 
-	min-height: 190px;
-	position: relative;
-	display: inline-block;
-	margin-right: 2px;
-	border: 1px solid black;
-
-}
-.image_prod img {
-	max-width: 120px;
-	min-height: 120px;
-
-}
-.name_prod {
-	height: auto;
-	margin-top: 10px;
-	font: normal 18px Arial;
-}
-.prod-list ul li:hover {
-	border: 1px solid pink;
-}
-*/
-/*=============================================/*/
 
 #best_price {
 	width: 100%;
@@ -319,11 +271,8 @@
 #list_product {
 	width: 100%;
 	margin-top: 20px;
-	background: #252525; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(#252525, #1a1a1a); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(#252525, #1a1a1a); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(#252525, #1a1a1a); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(#252525, #1a1a1a); /* Standard syntax */
+	z-index: -1;
+	
 }
 #list_product h1 {
 	width: 100%
@@ -332,49 +281,77 @@
 	color: red;
 }
 .id_product {
-	width: 196px;
-	box-sizing: border-box;
-	text-align: center;
+	width: 230px;
+    margin: 10px 8px;
+    text-align: center;
     overflow: hidden;
-    height: auto;
-    /*min-height: 190px;*/
+    height: 330px;
+    min-height: 190px;
     position: relative;
     display: inline-block;
-    margin: 0px -9px 0px 9px;
+    box-shadow: 1px 0px 2px 0px #ca9999;
 }
-.id_product:hover img{
-	transform: scale(1.1);
-	color: pink;
-}
-.id_product:hover a {
-	color: red;
+.id_product:hover {
+	box-shadow: 1px 0px 2px 0px #de2525;
 }
 .image_prod {
-	width: 180px;
-	height: 180px;
+	width: 230px;
+	height: 230px;
 	overflow: hidden;
 }
 .image_prod img{
-	max-width: 180px;
-	transition: .5s ease-in-out;
+	max-width: 230px;
 	
 }
 .price_prod {
-	color: white;
+	width: 100%;
+    height: 45px;
+    line-height: 45px;
+    border-bottom: 1px solid grey;
+    color: red;
+    
 }
 .name_prod {
-	width: 100%;
-	height: 50px;
-	line-height: 40px;
-	color: white;
-	text-align: center;
+    padding-top: 5px;
+    font-size: .8em;
+    text-transform: uppercase;
 	
 }
 .name_prod a {
-	color: #f1f1f1;
-	text-transform: uppercase;
+	color: #333333;
 }
-
-
-
-
+.name_prod a:hover {
+	text-decoration: underline;
+}
+/*=============================================================?*/
+#footer {
+	width: 100%;
+	min-height: 500px;
+	margin-top: 50px;
+	background: #f9dfdf; 
+    background: -webkit-linear-gradient(#f9dfdf, #f1f1f1); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#f9dfdf, #f1f1f1); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#f9dfdf, #f1f1f1); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#f9dfdf, #f1f1f1); /* Standard syntax (must be last) */
+}
+#footer_top {
+	font-weight: bold;
+	text-align: center;
+	width: 100%;
+	height: 50px;
+	color: red;
+	background: pink; 
+    background: -webkit-linear-gradient(pink, #f1f1f1); 
+    background: -o-linear-gradient(pink, #f1f1f1); 
+    background: -moz-linear-gradient(pink, #f1f1f1); 
+    background: linear-gradient(pink, #f1f1f1);
+}
+#address{
+	padding: 10px;
+}
+.add {
+	font-size: 1.2em;
+	font-weight: bold;
+	color: red;
+	font-family: 'timenewroman';
+}

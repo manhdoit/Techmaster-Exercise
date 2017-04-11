@@ -1,0 +1,11 @@
+.gioithieu {
+	width: 100%;
+	padding: 20px 10px;
+	font-size: 16px;
+	line-height: 24px;
+	border: 1px solid grey;
+	margin-top: 20px;
+}
+.gioithieu li {
+	list-style: none;
+}

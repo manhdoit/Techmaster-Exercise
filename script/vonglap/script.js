@@ -1,4 +1,5 @@
-function bai1(n)
+//bai 1
+function giaithua(n)
 {
     var j=1;
     for (var i = 2; i <= n; i++){
@@ -6,37 +7,59 @@ function bai1(n)
     }
     return j;
 }
-// console.log(bai1(12));
+// document.write(giaithua(5));
 
-function bai2(x) {
+// bai2
+function daonguoc(x) {
     var chuoi = '';
     for (var i = x.length - 1; i >= 0; i--){
-        chuoi += x[i];
+       document.write(chuoi = x[i]);
     }
-    return chuoi;
+
 }
-// console.log(bai2("xin chao"));
+// console.log(daonguoc("xin chao"));
  
-function bai3(x) {
+// bai3
+function duplicate(x) {
 	var y ='-'
 	var chuoi ='';
+	
 	for( i = 0; i < 10; i++){
-		 chuoi += x + y;
+		chuoi += x + y;
 	}
-	return chuoi.slice(0,-1) ;
+	return chuoi.slice(0, -1);
 }
-// console.log(bai3("123"));
+// document.write(duplicate("123"));
 
 //bai 4
-function bai4(ten){
- ten=['do', 'hong', 'nam', 'kien', 'an', 'dat', 'hai', 'hoang'];
-	
-	x=ten.sort();
-	
-	for( i = 1; i < x.length; i++){
-		i+= x;
-	}
-	return i + x;
-}
 
-document.write("<p>"+ i +". "+ x[i]+"</p>");
+function sapxep(x){	
+	x.sort();
+for ( var i = 0; i < x.length; i++) {
+ document.write("<p>" + i +". " + x[i] + "</p>");
+}}
+// console.log(sapxep(['hong','a', 'b','d','n','y']));
+
+//bai5
+function double(x){
+	var arr=[];
+	var j;
+for (var i = 0; i < x.length; i++){
+	j= x[i]*2 ;
+	arr.push(j);
+	}
+	return arr;
+}
+// console.log(double([5,4,2]));
+
+//bai6 
+function chialaydu(x){
+	var arr=[];
+	var dem;
+	for ( var i=0; i<x.length; i++){
+		dem= x[i]%2;
+		arr.push(dem)
+	}
+	return arr;
+}
+console.log(chialaydu([4,22,8]));

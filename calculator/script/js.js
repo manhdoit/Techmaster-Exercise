@@ -4,10 +4,7 @@ window.onload = function() {
 		output,//biến hiển thị kết quả
 		zero, //biến lấy số 0
 		period,
-
 		isResult = false,
-
- 	
 		operator;
 
 		screen =document.getElementById("result");
@@ -16,7 +13,6 @@ window.onload = function() {
 		for(var i = 0; i<len; i++) {
 			btn[i].addEventListener("click", function(){
 				num = this.innerHTML;
-
 				if(isResult){ // check nếu vừa ấn dấu bằng thì reset output
 					output = screen.innerHTML =num;
 					isResult=false;
@@ -24,9 +20,6 @@ window.onload = function() {
 					output= screen.innerHTML +=num;
 				}
 				
-
-				output=screen.innerHTML +=num;
-
 			})
 		}
 		
@@ -43,7 +36,6 @@ window.onload = function() {
             }
            	});
         } 
-
 	var y = [{key: "&divide;", value: "/"}, {key:"x" , value: "*"}, {key: "&ndash;", value: "-"}];
 				
     document.querySelector(".btn_equals").addEventListener("click", function(){
@@ -60,20 +52,10 @@ window.onload = function() {
 			console.log('resfdgdgdgdgdg', x);
 			screen.innerHTML = x;
 			isResult = true; // gán biến để check khi mà ấn dấu bằng.
-
-      //nhấn nút = 
-    document.querySelector(".btn_equals").addEventListener("click", function(){
-			var x = eval(output);
-		
-
-
     });
 		//nút xóa màn hình
 		document.querySelector(".btn_clear").addEventListener("click", function(){
 			screen.innerHTML = "";
 		})
-
-	
-}
 
 }

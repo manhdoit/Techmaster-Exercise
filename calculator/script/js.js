@@ -1,11 +1,10 @@
-window.onload = function(){
-	var output,
+var output,
 	luu_kq,
 	operator,
-	// flag = false,
 	screen;
+window.onload = function(){
 
-	function hienthi() {//Click số hiển thị lên màn hình
+	//function hienthi() {//Click số hiển thị lên màn hình
 		screen = document.getElementById("result");
 		var btn = document.querySelectorAll(".btn_number");
 		var len_btn = btn.length;
@@ -13,11 +12,11 @@ window.onload = function(){
 			btn[i].addEventListener("click", function() {
 				num = this.innerHTML;
 				screen.innerHTML += num;
-				output = screen.innerHTML
+				output = screen.innerHTML;
 			})
 		}
-	}
-	hienthi();
+	// }
+	// hienthi();
 
 	function operator() {//Click các button toán tử
 		operator = document.querySelectorAll(".operator");
@@ -28,12 +27,10 @@ window.onload = function(){
 				if (screen.innerHTML == "") {
 					screen.innerHTML = screen.innerHTML;
 				}
-				// else if(screen.innerHTML = output + operator) {
-				// 	flag = true;
-				// }
-				// else if(luu_kq = screen.innerHTML) {//Nếu thực hiện phép tính xong mà ấn tiếp toán tử
-				// 	screen.innerHTML = luu_kq + operator;
-				// }
+				
+				else if(luu_kq = screen.innerHTML) {//Nếu thực hiện phép tính xong mà ấn tiếp toán tử
+					screen.innerHTML = luu_kq + operator;
+				}
 				else {
 					screen.innerHTML = output + operator;
 			}

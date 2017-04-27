@@ -1,61 +1,75 @@
-window.onload = function() {
-	var current, 
-		screen,//biến lấy div hiển thị kết quả
-		output,//biến hiển thị kết quả
-		zero, //biến lấy số 0
-		period,
-		isResult = false,
-		operator;
+window.onload = function(){
+	var output,
+	luu_kq,
+	operator,
+	// flag = false,
+	screen;
 
-		screen =document.getElementById("result");
+	function hienthi() {//Click số hiển thị lên màn hình
+		screen = document.getElementById("result");
 		var btn = document.querySelectorAll(".btn_number");
-		var len = btn.length;
-		for(var i = 0; i<len; i++) {
-			btn[i].addEventListener("click", function(){
+		var len_btn = btn.length;
+		for(var i = 0; i < len_btn; i++) {
+			btn[i].addEventListener("click", function() {
 				num = this.innerHTML;
-				if(isResult){ // check nếu vừa ấn dấu bằng thì reset output
-					output = screen.innerHTML =num;
-					isResult=false;
-				}else{
-					output= screen.innerHTML +=num;
-				}
-				
+				screen.innerHTML += num;
+				output = screen.innerHTML
 			})
 		}
-		
-	var elem1 = document.querySelectorAll(".operator");
-        var len1 = elem1.length;
-        for(var i = 0; i < len1; i++ ) {
-            elem1[i].addEventListener("click",function() {
-       	       operator = this.innerHTML;
-        	if(screen.innerHTML === "") {
-            	screen.innerHTML = screen.innerHTML.concat("");
-       		}
-            else if(output) {
-                screen.innerHTML = output.concat(operator);
-            }
-           	});
-        } 
-	var y = [{key: "&divide;", value: "/"}, {key:"x" , value: "*"}, {key: "&ndash;", value: "-"}];
-				
-    document.querySelector(".btn_equals").addEventListener("click", function(){
-		
-			var xTrim = output.trim();
-			var aaa = y.length;
-			console.log('xTrimold', xTrim);
-			for (var i = 0; i<aaa; i++){
-				
-				xTrim = xTrim.replace(y[i].key, y[i].value);
+	}
+	hienthi();
+
+	function operator() {//Click các button toán tử
+		operator = document.querySelectorAll(".operator");
+		var len_operator = operator.length;
+		for (var i = 0; i < len_operator; i++) {
+			operator[i].addEventListener("click", function(){
+				operator = this.innerHTML;
+				if (screen.innerHTML == "") {
+					screen.innerHTML = screen.innerHTML;
+				}
+				// else if(screen.innerHTML = output + operator) {
+				// 	flag = true;
+				// }
+				// else if(luu_kq = screen.innerHTML) {//Nếu thực hiện phép tính xong mà ấn tiếp toán tử
+				// 	screen.innerHTML = luu_kq + operator;
+				// }
+				else {
+					screen.innerHTML = output + operator;
 			}
-			console.log('xTrim', xTrim);
-			var x = eval(xTrim);
-			console.log('resfdgdgdgdgdg', x);
-			screen.innerHTML = x;
-			isResult = true; // gán biến để check khi mà ấn dấu bằng.
-    });
-		//nút xóa màn hình
-		document.querySelector(".btn_clear").addEventListener("click", function(){
+		})
+			
+		}
+	}
+	operator();
+
+	function giaithua() {
+		
+	}
+	function ketqua() {
+		document.querySelector(".btn_equals").addEventListener("click", function() {
+			screen.innerHTML = eval(output);
+		})
+	}
+	ketqua();
+
+	function AC() {//Xóa màn hình hiển thị
+		var xoa = document.querySelector(".btn_clear");
+		xoa.addEventListener("click", function(){
 			screen.innerHTML = "";
 		})
+	}
+	AC();
+	
+	function Del() {//ấn nút mũi tên xóa ký tự
+		var del = document.querySelector(".btn_del");
+		del.addEventListener("click", function() {
+			screen.innerHTML = screen.innerHTML.slice(0,-1);
+		})
+	}
+	Del();
+	
+	
+	
 
 }

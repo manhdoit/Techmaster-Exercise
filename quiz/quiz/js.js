@@ -41,9 +41,18 @@ function loadNextQuestion() {
   if(currentQuestion == totQuestions) {
     container.style.display = 'none';
     resultCont.style.display ='';
-    resultCont.textContent = 'Your Score: ' + score;
-    return;
+    if(score<3) {
+      resultCont.textContent = 'You Lose ';
+      return;
+    }
+    else {
+      window.location.href="homepage.html"
+      // resultCont.textContent = score;
+    }
   }
   loadQuestion(currentQuestion);
 }
 loadQuestion(currentQuestion);
+function myfun() {
+  location.href="homepage.html"
+}

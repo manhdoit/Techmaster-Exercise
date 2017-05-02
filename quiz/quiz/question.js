@@ -21,7 +21,7 @@ var questions = [
     "option2": "Đại tây dương",
     "option3": "Bắc băng dương",
     "option4": "Thái bình dương",
-    "answer" : "1"
+    "answer" : "4"
   },
   { "question": "Nhà văn Hemingway đoạt giải Nobel với tác phẩm nào?",
     "option1": "Ông lão đánh cá và con cá vàng",

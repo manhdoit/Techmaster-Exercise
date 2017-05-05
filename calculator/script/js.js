@@ -1,7 +1,6 @@
 var output,
 luu_kq,
 operator,
-lastChar,
 isResult = false,
 screen;
 

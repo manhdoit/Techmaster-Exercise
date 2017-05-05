@@ -1,13 +1,6 @@
-window.onload = function() {
-	var current, 
-		screen,//biến lấy div hiển thị kết quả
+	var screen,//biến lấy div hiển thị kết quả
 		output,//biến hiển thị kết quả
-		zero, //biến lấy số 0
-		period,
-
 		isResult = false,
-
- 	
 		operator;
 
 		screen =document.getElementById("result");
@@ -46,34 +39,30 @@ window.onload = function() {
 
 	var y = [{key: "&divide;", value: "/"}, {key:"x" , value: "*"}, {key: "&ndash;", value: "-"}];
 				
-    document.querySelector(".btn_equals").addEventListener("click", function(){
-		
-			var xTrim = output.trim();
-			var aaa = y.length;
-			console.log('xTrimold', xTrim);
-			for (var i = 0; i<aaa; i++){
-				
-				xTrim = xTrim.replace(y[i].key, y[i].value);
-			}
-			console.log('xTrim', xTrim);
-			var x = eval(xTrim);
-			console.log('resfdgdgdgdgdg', x);
-			screen.innerHTML = x;
-			isResult = true; // gán biến để check khi mà ấn dấu bằng.
+    document.querySelector(".btn_equals").addEventListener("click", function() {
 
-      //nhấn nút = 
-    document.querySelector(".btn_equals").addEventListener("click", function(){
-			var x = eval(output);
-		
+      var xTrim = output.trim();
+      var aaa = y.length;
+      console.log('xTrimold', xTrim);
+      for (var i = 0; i < aaa; i++) {
+
+        xTrim = xTrim.replace(y[i].key, y[i].value);
+      }
+
+      console.log('xTrim', xTrim);
+      var x = eval(xTrim);
+      console.log('resfdgdgdgdgdg', x);
+      screen.innerHTML = x;
+      isResult = true; // gán biến để check khi mà ấn dấu bằng.
+    })  //nhấn nút =
+      document.querySelector(".btn_equals").addEventListener("click", function () {
+        var x = eval(output);
+
+      });
+      //nút xóa màn hình
+      document.querySelector(".btn_clear").addEventListener("click", function () {
+        screen.innerHTML = "";
+      })
 
 
-    });
-		//nút xóa màn hình
-		document.querySelector(".btn_clear").addEventListener("click", function(){
-			screen.innerHTML = "";
-		})
 
-	
-}
-
-}

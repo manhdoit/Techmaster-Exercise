@@ -12,20 +12,21 @@
     <div id="question"></div>
     <hr/>
     <div id="answer_chose">
-        <button id="btn0" class="btn"><span class="choice0"></span></button>
+        <button id="btn0" class="btn" onclick="press(this) "><span class="choice0" ></span></button>
 
-        <button id="btn1" class="btn"><span class="choice0"></span></button>
+        <button id="btn1" class="btn"onclick="press(this)"><span class="choice0" ></span></button>
 
-        <button id="btn2" class="btn"><span class="choice0"></span></button>
+        <button id="btn2" class="btn"onclick="press(this)"><span class="choice0" ></span></button>
 
-        <button id="btn3" class="btn"><span class="choice0"></span></button>
+        <button id="btn3" class="btn"onclick="press(this)"><span class="choice0" ></span></button>
     </div>
     <hr/>
     <div id="btn_next">
-        <p id="progress">Question x of y.</p>
-        <button id="check_next">Check</button>
+        <!--<p id="progress">Question x of y.</p>-->
+        <button id="check_next" onclick="nextbtn()">Check</button>
     </div>
 </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="js.js"></script>
 </body>
 </html>

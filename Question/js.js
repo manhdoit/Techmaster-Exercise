@@ -29,19 +29,42 @@ var questions = [
   }
 ]
 
-var i = 0
-var progress = document.getElementById('progress')
-progress.innerHMTL = 'Question ' + i + 'of 5'
-var element = document.getElementById('question')
-element.innerHTML = questions[i].Question
-var choices = document.querySelectorAll('.choice0')
-var choi_length = choices.length
-for (var j = 0; j < choi_length; j++) {
-  choices[j].innerText = questions[i].dap_an[j]
+var i = 0;
+var chose = false;
+var ans = questions[i].Answer;
+var totQuestion = questions.length;
+var score=0;
+var kq='';
+var btn = document.querySelectorAll('.btn');
+var ques = document.querySelector('#question');
+var choice = document.querySelectorAll('.choice0');
+var next = document.querySelector("#check_next");
 
+function press(button) {
+  kq=button.innerText;
+  for(var i = 0;i<btn.length;i++){
+    btn[i].style.backgroundColor='#778897';
+
+  }
+  button.style.backgroundColor = "red";
+  // chose=false;
+}
+function loadquestion() {
+  ques.innerText = questions[i].Question;
+  for (var j=0; j< choice.length; j++) {
+    choice[j].innerText = questions[i].dap_an[j]
+  }
 }
 
-var checked = document.querySelector('#check_next')
-checked.addEventListener('click', function () {
-  i++
-})
+
+function nextbtn() {
+  
+  if(i==5){
+    result();
+  }
+
+  else{
+  loadquestion();}
+  i++;
+}
+nextbtn();

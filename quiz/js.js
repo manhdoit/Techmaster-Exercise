@@ -52,7 +52,11 @@ var opt3 = document.getElementById('opt3');
 var opt4 = document.getElementById('opt4');
 var nextButton = document.getElementById('nextButton');
 var resultCont = document.getElementById('result');
-// var Add_Score = document.getElementById('youlose');
+var scoreCont = document.getElementById('score');
+var replay = document.getElementById('replay');
+    replay.style.display = 'none';
+var congrulation = document.getElementById("congrulation");
+
 function loadQuestion(questionIndex) {
   var q = questions[questionIndex];
   questionEl.textContent = (questionIndex + 1) + '. ' + q.question;
@@ -65,7 +69,7 @@ function loadQuestion(questionIndex) {
 function loadNextQuestion() {
   var selectedOption = document.querySelector('input[type=radio]:checked');
   if(!selectedOption) {
-    alert('Please select your answer!');
+    alert('Hãy chọn câu trả lời!');
     return;
   }
   var answer = selectedOption.value;
@@ -74,25 +78,51 @@ function loadNextQuestion() {
   }
   selectedOption.checked = false;
   currentQuestion++;
+
   if(currentQuestion == totQuestions - 1) {
     nextButton.textContent = 'Finish';
   }
   if(currentQuestion == totQuestions) {
     container.style.display = 'none';
     resultCont.style.display ='';
+    scoreCont.style.display = '';
+    replay.style.display = 'block';
     if(score < 3) {
-      resultCont.textContent = 'You Lose ' + score;
-      //window.location.href="youlose.html";
-      // Add_Score.textContent = score;
-      return;
+    resultCont.innerHTML = 'You Lose ';
+    scoreCont.innerHTML = 'Điểm của bạn là: ' + score;
+    return;
     }
     else {
-      // window.location.href="youwin.html"
-      resultCont.textContent = 'you win' + score;
+      replay.style.display = 'none';
+      resultCont.innerHTML = 'You Win! ';
+      scoreCont.innerHTML = 'Điểm của bạn là: ' + score;
+      setTimeout(function(){
+        window.location.href="youwin.html";
+      }, 2000)
+
 
     }
   }
+  showprogress();
   loadQuestion(currentQuestion);
 }
 loadQuestion(currentQuestion);
+function rePlay(){
+  window.location.reload('index.html');
+}
+function showprogress() {
+  var numberQuestion = currentQuestion + 1;
+  var show_pro_gress = document.getElementById('show');
+  show_pro_gress.innerText = 'Câu hỏi số ' + numberQuestion + ' trên ' + totQuestions;
+}
+showprogress();
+
+
+
+
+
+
+
+
+
 

@@ -1,0 +1,46 @@
+*{margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body {
+    overflow-y: scroll;
+    background-color: #333;
+
+}
+
+#content {
+    display: block;
+    float: left;
+    padding: 10px;
+     margin: 0 auto;
+
+}
+.card {
+    position: relative;
+    display: inline-block;
+    margin: 10px;
+    ;
+}
+img{
+    width:180px;
+    height: 270px;
+    border-radius: 5px;
+}
+.back{
+    transform: rotateY(180deg);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.card.NewClass .font{
+    transform: rotateY(180deg);
+
+}
+.card.NewClass .back {
+    transform: rotateY(00deg);
+}
+.card .back, .card .font  {
+    transition: all 0.5s;
+    backface-visibility: hidden;
+}

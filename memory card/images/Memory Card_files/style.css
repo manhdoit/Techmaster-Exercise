@@ -5,22 +5,16 @@
 }
 body {
     overflow-y: scroll;
-    background-image: url("images/bg1.jpg");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-}
+    background-color: #333;
 
+}
 
 #content {
     display: block;
     /*float: left;*/
     width: 960px;
-    padding: 50px 10px;
+    padding: 150px 10px;
     margin: 0 auto;
-    z-index: 200;
-    position: relative;
 }
 .card {
     position: relative;
@@ -53,33 +47,11 @@ img{
 /*--------------------------------------*/
 #start {
     margin: 0 auto;
-    width: 600px;
+    width: 500px;
     background-color: #f1f1f1;
     overflow: auto;
-    padding: 20px;
-    text-align: center;
-    z-index: 1000;
-    position: relative;
+    text-alight: center;
 
-}
-#start h1 {
-    font-size: 35px;
-    color: RGBA(255,48,41, 0.8);
-}
-#start button {
-    margin-top: 100px;
-    width: 150px;
-    height: 50px;
-    border-radius: 5px;
-    background-color: #FF3933;
-    font-weight: bold;
-    font-size: 20px;
-    border: none;
-    color: #fff;
-    cursor: pointer;
-}
-#start button:hover{
-    background-color: #FF8D33;
 }
 #wrap {
     position: fixed;

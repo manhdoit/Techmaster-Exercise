@@ -1,0 +1,64 @@
+*{margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body {
+    overflow-y: scroll;
+    background-color: #333;
+
+}
+
+#content {
+    display: block;
+    /*float: left;*/
+    width: 960px;
+    padding: 150px 10px;
+    margin: 0 auto;
+}
+.card {
+    position: relative;
+    display: inline-block;
+    margin: 10px;
+    ;
+}
+img{
+    width:150px;
+    height: 230px;
+    border-radius: 5px;
+}
+.back{
+    transform: rotateY(180deg);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.card.NewClass .font{
+    transform: rotateY(180deg);
+
+}
+.card.NewClass .back {
+    transform: rotateY(00deg);
+}
+.card .back, .card .font  {
+    transition: all 0.5s;
+    backface-visibility: hidden;
+}
+/*--------------------------------------*/
+#start {
+    margin: 0 auto;
+    width: 500px;
+    background-color: #f1f1f1;
+    overflow: auto;
+    text-alight: center;
+
+}
+#wrap {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    /*display: none;*/
+}

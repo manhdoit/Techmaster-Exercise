@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+//bài 1 Hình tam giác vuông
+function printTrigangle(n) {
+	document.write("</br></br>Vẽ hình tam giác vuông</br></br>")
+	for(var i = 0; i < n; i++) {
+		for(j=0; j<i+1; j++){
+			document.write('*')
+		}
+		document.write('</br>')
+	}
+	
+}
+printTrigangle(4);
+
+// ---------------------------------------------------
+
+//Bài 2 hình chữ nhật rỗng
+function printEmptyRectangle(a, b) {
+	document.write("</br></br>Vẽ hình tam chữ nhật rỗng</br></br>")
+  for (var i = 1; i <= a; i++) {
+    for (var j = 1; j <= b; j++) {
+    	if (i==1 || i==a || j==1 || j==b){
+       	    document.write('*');
+    	}
+    	else{
+    		document.write("&nbsp;&nbsp;");
+    	}
+  }
+  document.write('</br>');
+ }
+}
+printEmptyRectangle(5,12);
+
+// ---------------------------------------------------
+
+//bài 3 tam giác cân ngược 
+function printSpecialTrigangle(n) {
+	document.write("</br></br>Vẽ hình tam giác cân ngược</br></br>")
+	for(i=1; i<=n; i++){
+		for(j=1; j<= 2*n-1; j++) {
+			if(i==1){
+				document.write("*");
+			}
+			else if(j<i || j>2*n-i){
+				document.write("&nbsp;&nbsp;");
+			}
+			else{
+				document.write("*");
+			}
+		}
+		document.write("</br>");
+	}
+}
+printSpecialTrigangle(6);
+// tam giac can 
+// function printSpecialTrigangle_1(n) {
+// 	for(var i = 0; i < n; i++) {
+// 		for(var j = n; j > i; j--){
+// 			document.write("&nbsp;&nbsp;")
+// 		}
+// 		for(j=0; j<i*2+1; j++){
+// 			document.write('*')
+			
+// 		}
+// 		document.write('</br>')
+// 	}
+	
+// }
+// printSpecialTrigangle_1(5);
+
+// ------------------------------------------------
+
+//Bài 4 in chữ X
+function printX(n) {
+	document.write("</br></br>Vẽ hình chữ X</br></br>")
+	for(i=1; i<=n; i++){
+		for(j=1; j<=n; j++) {
+			if(i==j || j == n-i+1){
+				document.write("*");
+			}
+			else {
+				document.write("&nbsp;&nbsp;");
+			}
+		}
+		document.write('</br>');
+		
+	}
+}
+printX(7);
+
+// --------------------------------------------------
+
+//Bài 5 in hình Bướm 
+function printButterfly(n) {
+	document.write("</br></br>Vẽ hình tam giác đối đỉnh </br></br>")
+	var h = Math.round(n/2);
+	var a = h-1;
+	for(var i=1; i<=n; i++) {
+		if(i<=h){
+			for(var j=1; j <= n; j++){
+				if( j<= h-a|| j>=h+a ){
+				document.write("*");
+				}
+				else{
+					document.write("&nbsp;&nbsp;")
+				}
+			}
+			document.write("</br>")
+			a--;
+		}
+		else {
+			for(var j = 1; j <= n; j++){
+				if(j >= h - a || j <= h + a ){
+					document.write("*");
+				}
+				else{
+					document.write("&nbsp;&nbsp;")
+				}
+				
+			}
+			document.write("</br>");
+				a--;
+		}
+	}
+}
+printButterfly(7);
+
+</script>
+</body>
+</html>

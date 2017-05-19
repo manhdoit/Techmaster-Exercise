@@ -11,8 +11,8 @@
  }
  body {
  	font-size: 18px;
-
- 	font-family: sans-serif, helvetica, arial, tahoma;
+	 font-family: 'Roboto', sans-serif;
+ 	/*font-family: sans-serif, helvetica, arial, tahoma;*/
  	/*background-image: url("../images/body_bg_1.jpg");*/
  	background-color: #f1f1f1;
  	box-sizing: border-box;
@@ -368,7 +368,7 @@
 
 /*=============================================================?*/
 #footer {
-	font-family: 'timenewroman';
+	font-family: 'Roboto', sans-serif;
 	width: 100%;
 	min-height: 100px;
 	margin-top: 50px;

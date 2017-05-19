@@ -1,0 +1,78 @@
+body {
+    background-image: url("bg1.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+#wrap {
+    width: 500px;
+    height: 550px;
+    /*border: 1px solid;*/
+    margin: 50px auto;
+    /*text-align: left;*/
+    text-align: center;
+    background-color: rgba(74, 235, 251, 0.7);
+    border-radius: 10px;
+
+}
+form  {
+    margin: 0 auto;
+
+    }
+#wrap h1 {
+    font-size: 3em;
+    margin-bottom: 40px;
+    padding-top: 30px;
+    width: 100%;
+    /*background-color: rgb(255, 0, 0);*/
+}
+.input_text input{
+    width: 250px;
+    height: 30px;
+    font-size: 14px;
+    margin: 5px;
+    padding-left: 26px;
+}
+.input_text:before {
+    font-family: FontAwesome;
+    color: rgba(255, 0, 0, 0.8);
+    position: absolute;
+    font-size: 16px;
+    padding-top: 15px;
+    padding-left: 10px;
+}
+#name:before{
+    content:'\f007'
+}
+#email:before {
+    content: '\f0e0';
+}
+#birthday:before{
+    content:'\f073';
+}
+#address:before{
+    content:'\f2bc';
+}
+#phonenumber:before{
+    content:'\f095';
+}
+#btn button{
+    margin-top: 20px;
+    width: 120px;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: #f1f1f1;
+    background-color: red;
+    cursor: pointer;
+}
+#btn button:hover {
+    background-color: rgb(255, 128, 0);
+}
+#rad{
+font-size: 18px;
+}
+#rad input {
+    margin: 10px;
+}

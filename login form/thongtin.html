@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Thông tin</title>
+    <style>
+        body{
+            background-image: url("bg1.jpg");
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        #container {
+            width: 450px;
+            height: 450px;
+            margin: 100px auto;
+            background-color: rgba(74, 235, 251, 0.7);;
+            text-align: center;
+            border-radius: 10px;
+            padding: 5px;
+        }
+        .title{
+            text-align: center;
+            font-size: 2.6em;
+            /*color: white;*/
+        }
+
+        #thongtin {
+            font-size: 20px;
+            margin-left: 2em;
+            line-height: 2em;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+<div id="container">
+    <h1 class="title">Đăng ký thành công</h1>
+    <h1 class="tieude">Thông tin của bạn</h1>
+    <div id="thongtin"></div>
+</div>
+<script>
+    var thongtin = document.getElementById("thongtin");
+    var add = window.location.search;
+    var deco = decodeURIComponent(add);
+    deco = deco.replace("?","");
+    deco = deco.replace(/\+/g," ");
+    deco = deco.replace(/=/g,": ");
+    deco = deco.split("&");
+    for(var i = 0; i<deco.length-1; i++){
+        thongtin.innerHTML += deco[i] +"</br>";
+    }
+</script>
+</body>
+</html>

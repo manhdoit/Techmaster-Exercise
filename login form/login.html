@@ -11,24 +11,40 @@
         <h1 class="title">Register Form</h1>
 
         <form id="form" action="thongtin.html">
-            <div id="name" class="input_text">
-                <input type="text" name="Họ tên" value="" placeholder="Họ tên" /></br>
+            <div id="hoten" class="input">
+                <input type="text" name="Họ tên" id="name" class="input_text" placeholder="Họ tên"/>
+                <span class="error"></span></br>
             </div>
-            <div id="email" class="input_text">
-                <input type="text" name="Email" value="" placeholder="Email"/></br>
+
+            <div id="mail" class="input">
+                <input type="text" name="Email" id="email" class="input_text" placeholder="Email"/>
+                <span class="error"></span></br>
             </div>
-            <div id="birthday" class="input_text">
-                <input type="text" name="Ngày sinh" value="" placeholder="Ngày sinh"/></br>
+
+            <div id="date" class="input">
+                <input type="text" name="Ngày sinh" id="birthday" class="input_text" placeholder="Ngày sinh"/>
+                <span class="error"></span></br>
             </div>
-            <div id="address" class="input_text">
-                <input type="text" name="Địa chỉ" value="" placeholder="Địa chỉ"/></br>
+
+            <div id="diachi" class="input">
+                <input type="text" name="Địa chỉ" id="address" class="input_text" placeholder="Địa chỉ"/>
+                <span class="error"></span></br>
             </div>
-            <div id="phonenumber" class="input_text">
-                <input type="text" name="Số điện thoại" value="" placeholder="Điện thoại"/></br>
+
+            <div id="dienthoai" class="input">
+                <input type="text" name="Số điện thoại" id="phonenumber" class="input_text" placeholder="Điện thoại"/>
+                <span class="error"></span></br>
             </div>
+
+            <div id="face" class="input">
+                <input type="text" name="Facebook" id="facebook" class="input_text" placeholder="Link Facebook"/>
+                <span class="error"></span></br>
+            </div>
+
             <div id="rad">
                 <input type="radio" name="Giới tính" value="Nam" id="male"/><label for="male">Nam</label>
-                <input type="radio" name="Giới tính" value="Nữ" id="female"/><label for="female">Nữ</label></br>
+                <input type="radio" name="Giới tính" value="Nữ" id="female"/><label for="female">Nữ</label>
+                <span class="error"></span></br>
             </div>
             <div id="btn">
                 <button type="submit" name="register" id="register" value="">Đăng ký</button></br>
@@ -36,5 +52,8 @@
 
         </form>
     </div><!--end Wrap-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script src="js.js"></script>
 </body>
 </html>

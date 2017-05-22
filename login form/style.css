@@ -4,8 +4,8 @@ body {
     background-attachment: fixed;
 }
 #wrap {
-    width: 500px;
-    height: 550px;
+    width: 800px;
+    height: 700px;
     /*border: 1px solid;*/
     margin: 50px auto;
     /*text-align: left;*/
@@ -16,7 +16,6 @@ body {
 }
 form  {
     margin: 0 auto;
-
     }
 #wrap h1 {
     font-size: 3em;
@@ -25,14 +24,14 @@ form  {
     width: 100%;
     /*background-color: rgb(255, 0, 0);*/
 }
-.input_text input{
+input.input_text {
     width: 250px;
     height: 30px;
     font-size: 14px;
     margin: 5px;
     padding-left: 26px;
 }
-.input_text:before {
+.input:before {
     font-family: FontAwesome;
     color: rgba(255, 0, 0, 0.8);
     position: absolute;
@@ -40,20 +39,28 @@ form  {
     padding-top: 15px;
     padding-left: 10px;
 }
-#name:before{
+#hoten:before{
     content:'\f007'
 }
-#email:before {
+#mail:before {
     content: '\f0e0';
 }
-#birthday:before{
+#date::before{
     content:'\f073';
 }
-#address:before{
+#diachi::before{
     content:'\f2bc';
 }
-#phonenumber:before{
-    content:'\f095';
+#dienthoai::before{
+    content: '\f10b';
+    font-size: 1.5em;
+    margin-left: 4px;
+    margin-top: -4px;
+}
+#face::before {
+    content: '\f230';
+    margin-left: 3px;
+    font-size: 1.2em;
 }
 #btn button{
     margin-top: 20px;
@@ -75,4 +82,10 @@ font-size: 18px;
 }
 #rad input {
     margin: 10px;
+}
+.error {
+    position: absolute;
+    font-style: italic;
+    color: darkblue;
+    font-size: 16px;
 }

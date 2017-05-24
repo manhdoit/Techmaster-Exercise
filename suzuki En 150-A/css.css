@@ -1,0 +1,255 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif, Tahoma, Arial;
+    background-color: #000;
+    /* background-image: url("images/black-3.jpg"); */
+    background-size: cover;
+    background-attachment: fixed;
+    box-sizing: border-box;
+}
+
+ul, li {
+    list-style: none;
+}
+
+ul, h1 {
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    text-align: center;
+    /* width: 960px; */
+    /* height: 2000px; */
+    /* border: 1px solid orange; */
+    margin: 0 auto;
+}
+#videos{
+    background: #DAF7A6;
+}
+#advantage {
+    height: 500px;
+    color: white;
+    background-image: url(images/black13.jpg);
+    background-attachment: fixed;
+    /*background-size: cover;*/
+}
+
+#advantage ul li {
+    width: 960px;
+    text-align: justify;
+    /* margin: 0 auto; */
+    font-size: 22px;
+    color: white;
+    margin: 0px 10px 10px 0px;
+}
+
+.wrap {
+    margin: 0 auto;
+    width: 960px;
+    height: 100%;
+    /* background-color: rgba(0, 0, 0, 0.2); */
+    background-size: cover;
+}
+
+.wrap ul {
+    padding: 30px 0px 0px 30px;
+}
+
+#header {
+    height: 960px;
+    overflow: hidden;
+}
+
+#logo {
+    text-align: center;
+
+}
+
+#logo img {
+    height: 200px;
+    text-align: center;
+}
+
+.title {
+    font-size: 1.7em;
+    text-align: left;
+    padding-left: 15px;
+    height: 150px;
+    line-height: 150px;
+    text-align: center;
+    /*background-image: url("images/bg_t.jpg");*/
+    /*background-attachment: fixed;*/
+    /*background-size: cover;*/
+    background-color: #575656;
+    color: #fff;
+}
+.title_top {
+    font-size: 3em;
+    /*margin-bottom: 2px;*/
+    background-image: linear-gradient(to bottom, #45484d, #000000);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#45484d, endColorstr=#000000);
+    /*background-image: url(images/bg_title_1.png);*/
+}
+.title h1 {
+    font-size: 3em;
+    margin: 0px;
+}
+
+#thongtin {
+    /*padding: 20px 20px;*/
+    height: 400px;
+    /* margin-top: -25px; */
+    color: #ff9b00;
+    background-image: url(images/en150.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#thongtin p {
+    font-size: 22px;
+    color: #f1f1f1;
+}
+
+.chitiet {
+    padding: 50px 0px 0px 20px;
+    float: left;
+}
+
+.chitiet1 {
+    float: right;
+    padding: 5em 0px 0px 0px;
+}
+
+#xedo {
+    height: 500px;
+    color: white;
+    background-image: url(images/su1.jpg);
+    background-attachment: fixed;
+}
+
+.wrapper {
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.57);
+}
+
+.wrapper li {
+    text-align: justify;
+    padding: 10px;
+    margin-left: 40px;
+    font-size: 22px;
+    color: #000;
+    width: 960px;
+    margin: 0 auto;
+}
+
+/*---------------------------------------------------------------------------*/
+.w3-content {
+    position: relative;
+    margin: 0 auto;
+    width: 960px;
+    height: 700px;
+    overflow: hidden;
+}
+
+.w3-content .mySlides img {
+    height: 700px;
+}
+
+.w3-button {
+    position: absolute;
+    top: 50%;
+    height: 100px;
+    width: 50px;
+    font-size: 3em;
+    background-color: orange;
+    opacity: 0.3;
+    border: none;
+    position: absolute;
+}
+
+.w3-button:hover {
+    opacity: 1;
+}
+
+.btn-left {
+    left: 0;
+}
+
+.btn-right {
+    right: 0;
+}
+
+.caption {
+    position: absolute;
+    width: 100%;
+    height: 90px;
+    background-color: rgba(241, 241, 241, 0.5);
+    font-size: 20px;
+    color: black;
+    bottom: -20px;
+    padding: 10px 0px 0px 10px;
+}
+
+.popup {
+    width: 900px;
+    margin: auto;
+    text-align: center;
+    /*position: relative;*/
+}
+
+.popup img {
+    width: auto;
+    height: 170px;
+    cursor: pointer;
+    border: 10px solid white;
+    margin: 5px;
+}
+
+.show {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+.show .overlay {
+    background: rgba(0, 0, 0, .6);
+    position: absolute;
+    top: 0;
+}
+
+.show .img-show {
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.29);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    overflow: hidden;
+    transform: translate(-50%, -50%);
+}
+
+span {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 99;
+}
+
+.img-show img {
+    opacity: 1;
+    border: none;
+    width: 960px;
+    height: auto;
+    margin-top: 20px;
+    left: 50%;
+}

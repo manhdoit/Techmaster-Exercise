@@ -11,6 +11,10 @@ ul, li {
     font-family: "Fertigo";
     src: url("../Fonts/Fertigo.otf");
 }
+@font-face {
+    font-family: "Fertigo Pro Regular";
+    src: url("../Fonts/Fertigo Pro Regular.ttl");
+}
 body {
     font-family: "Fertigo", sans-serif;
     box-sizing: border-box;
@@ -61,9 +65,10 @@ body {
 /*---------------search bar------------------*/
 
 .search_bar{
+    display: inline-table;
     float: right;
     text-align: left;
-    width: 252px;
+    /* width: 252px; */
     margin-right: 3px;
 }
 .search_bar li{
@@ -119,21 +124,99 @@ body {
     padding-top: 20px;
 }
 #content {
-    width: 100%;
+    /* width: 100%; */
     background-image: url("../images/bg_content.jpg");
-    /*margin-top: 20px;*/
+    margin-top: -2px;
+    padding: 13px;
+    overflow: hidden;
 }
 nav.main_nav{
+    box-sizing: border-box;
     width: 100%;
-    height:;
+    height: 53px;
+
+    padding: 2px 0px 2px 0px;
+    border-top: 2px dotted #573c2b;
+    border-bottom: 2px dotted #573c2b;
+    overflow: hidden;
+}
+.main_nav ul {
+list-style-type: circle;
+    height: 44px;
+    line-height: 44px;
+    padding: 0px 10px;
+    background: url("../images/bg_main-menu.jpg");
+}
+.main_nav ul li {
+    display: inline-table;
+    padding: 0px 15px;
+
+
+}
+.main-menu li a {
+
+    color: #513a2d;
+    text-transform: uppercase;
+}
+.main-menu li a:hover{
+    color: #b68700;
+}
+/*ul.main-menu li a:before{*/
+    /*font-family: FontAwesome;*/
+    /*content: "\f111";*/
+    /*padding: px 13px;*/
+    /*position: absolute;*/
+    /*left: -5px;*/
+    /*top: 3px;*/
+    /*font-size: 5px;*/
+/*}*/
+
+#main_content{
+    border: 1px dotted;
+    margin-top: 23px;
+    padding: 23px 20px 0px 20px;
 }
 
-
-
-
-
-
-
+#banner{
+    position: relative;
+    width: 888px;
+    height: 325px;
+    background-image: url("../images/bg_banner.jpg");
+    background-repeat: no-repeat;
+}
+#banner img {
+    position: absolute;
+    right: 15px;
+    bottom: -48px;
+}
+#banner .order{
+    width: 156px;
+    height: 43px;
+    background-color: white;
+    border-radius: 5px;
+    display: block;
+    text-align: center;
+    line-height: 43px;
+    font-size: 25px;
+    color: #3c2219;
+    position: absolute;
+    bottom: 73px;
+    left: 90px;
+    cursor: pointer;
+}
+#banner a:hover{
+    color: #b68700;
+    background-color: #a2745a;
+}
+#section_content {
+    margin-top: 53px;
+    width: 100%;
+}
+.product {
+    width: 282px;
+    display: inline-table;
+    text-align: center;
+}
 
 
 

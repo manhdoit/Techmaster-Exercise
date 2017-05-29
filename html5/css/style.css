@@ -221,8 +221,16 @@ list-style-type: circle;
     font-size: 35px;
     color: #af182a;
 }
+.dailymenu {
+    background-color: #f7ba05;
+    background-image: url(../images/bg_daily.png);
+    background-position: bottom;
+    background-repeat: repeat-x;
+    width: 232px;
+    height: 282px;
+    padding: 13px 25px 0px 25px;
 
-
+}
 
 
 

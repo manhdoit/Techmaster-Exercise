@@ -217,6 +217,10 @@ list-style-type: circle;
     display: inline-table;
     text-align: center;
 }
+.product h1 {
+    font-size: 35px;
+    color: #af182a;
+}
 
 
 

@@ -1,0 +1,324 @@
+*{margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+ul, li {
+    list-style-type: none;
+}
+@font-face {
+    font-family: "Fertigo";
+    src: url("../Fonts/Fertigo.otf");
+}
+@font-face {
+    font-family: "Fertigo Pro Regular";
+    src: url("../Fonts/Fertigo Pro Regular.ttl");
+}
+body {
+    font-family: "Fertigo", sans-serif;
+    box-sizing: border-box;
+    /**/
+    /*background-attachment: fixed;*/
+    background-color: #513a2d;
+}
+#bg{
+    width:100%;
+    height: 800px;
+    z-index: -9999;
+    position: absolute;
+    background-image: url("../images/background.jpg");
+}
+#container{
+    width: 960px;
+
+    margin: 0 auto;
+}
+/*-----------------Top page-----------------*/
+#top-page{
+    width:100%;
+    height: 168px;
+    /*border: 1px solid blue;*/
+}
+.head_content{
+    /*border: 1px solid white;*/
+    float: left;
+}
+/*------------top left------------*/
+.phone_number{
+    margin-top: 59px;
+}
+.head_content h1{
+    font-family: "Fertigo";
+}
+.home_del{
+    font-size: 25px;
+    color: #a2745a;
+}
+.tel{
+    color: #ffd7c1;
+}
+/*-----------logo----------------*/
+.logo{
+    margin: 9px 0px 0px 181px;
+}
+/*---------------search bar------------------*/
+
+.search_bar{
+    display: inline-table;
+    float: right;
+    text-align: left;
+    /* width: 252px; */
+    margin-right: 3px;
+}
+.search_bar li{
+    padding: 0px 14px;
+    margin: 50px 3px 0px 0px;
+    list-style: none;
+    display: inline-table;
+    font-size: 13px;
+    border-right: 2px solid #bf9c88;
+}
+.search_bar li a{
+    color: #e3bba5;
+}
+.search_bar li a:hover{
+    color: #a2745a;
+    cursor: pointer;
+}
+
+.head_content li:last-child{
+    border: none;
+}
+.search_bar input {
+    width: 210px;
+    height: 38px;
+    border: 1px solid #7e5743;
+    margin-top: 7px;
+    background-color: #140a07;
+    border-radius: 10px;
+    font-size: 13px;
+    color: #a2745a;
+    padding: 0px 35px 0px 5px;
+}
+.input_search{
+    position: relative;
+
+}
+.input_search:after{
+    font-family: FontAwesome;
+    content: '\f002 ';
+    color: #e3bca6;
+    position: absolute;
+    font-size: 22px;
+    top: 15px;
+    right: 13px;
+    cursor: pointer;
+}
+/*----------------------------End header------------------------------*/
+/*------------------------MainNav------------------------*/
+#wrapper {
+    width: 100%;
+    background-image: url("../images/bg_wrap.png");
+    background-repeat: repeat-x;
+    padding-top: 20px;
+}
+#content {
+    /* width: 100%; */
+    background-image: url("../images/bg_content.jpg");
+    margin-top: -2px;
+    padding: 13px;
+    overflow: hidden;
+}
+nav.main_nav{
+    box-sizing: border-box;
+    width: 100%;
+    height: 53px;
+
+    padding: 2px 0px 2px 0px;
+    border-top: 2px dotted #573c2b;
+    border-bottom: 2px dotted #573c2b;
+    overflow: hidden;
+}
+.main_nav ul {
+list-style-type: circle;
+    height: 44px;
+    line-height: 44px;
+    padding: 0px 10px;
+    background: url("../images/bg_main-menu.jpg");
+}
+.main_nav ul li {
+    display: inline-table;
+    padding: 0px 15px;
+
+
+}
+.main-menu li a {
+
+    color: #513a2d;
+    text-transform: uppercase;
+}
+.main-menu li a:hover{
+    color: #b68700;
+}
+/*ul.main-menu li a:before{*/
+    /*font-family: FontAwesome;*/
+    /*content: "\f111";*/
+    /*padding: px 13px;*/
+    /*position: absolute;*/
+    /*left: -5px;*/
+    /*top: 3px;*/
+    /*font-size: 5px;*/
+/*}*/
+/*--------------------------MainContent--------------------------*/
+#main_content{
+    border: 1px dotted;
+    margin-top: 23px;
+    padding: 23px 24px 0px 20px;
+    overflow: hidden;
+}
+
+#banner{
+    position: relative;
+    width: 888px;
+    height: 325px;
+    background-image: url("../images/bg_banner.jpg");
+    background-repeat: no-repeat;
+}
+#banner img {
+    position: absolute;
+    right: 15px;
+    bottom: -30px;
+}
+#banner .order{
+    width: 156px;
+    height: 43px;
+    background-color: white;
+    border-radius: 5px;
+    display: block;
+    text-align: center;
+    line-height: 43px;
+    font-size: 25px;
+    color: #3c2219;
+    position: absolute;
+    bottom: 73px;
+    left: 90px;
+    cursor: pointer;
+}
+#banner a:hover{
+    color: #b68700;
+    background-color: #a2745a;
+}
+#section_content {
+    margin: 53px 0px 43px 0px;
+    width: 100%;
+}
+.product {
+    padding-top: 13px;
+    width: 282px;
+    height: 283px;
+    display: inline-table;
+    text-align: center;
+    margin-right: 17px;
+    background-repeat: no-repeat;
+}
+.product h1 {
+    font-size: 35px;
+    color: #af182a;
+    text-transform: uppercase;
+}
+.product p {
+    font-size: 13px;
+    font-family: sans-serif;
+    text-align: left;
+    color: #513a2d;
+    margin: 17px 0px 0px 37px;
+}
+.dailymenu{
+    background-image: url("../images/bg_daily.png");
+}
+.dailymenu img {
+    border: 5px solid #ffe69b;
+}
+.special{
+    background-image: url("../images/bg_special.png");
+}
+.special img{
+    border: 5px solid #e3bba5;
+}
+.catering{
+    margin: 0;
+    background-image: url("../images/bg_catering.png");
+}
+.catering img{
+    border: 5px solid #e2f871;
+}
+#content_bottom{
+    /*padding: 10px 0px 0px 30px;*/
+    width: 100%;
+    height: 227px;
+    background-color: #f4e5dc;
+
+}
+#content_bottom .product{
+    float: left;
+}
+#content_bottom h1 {
+    text-align: left;
+    font-size: 20px;
+    font-weight: 100;
+}
+#content_bottom h1::before {
+    font-family: FontAwesome;
+    padding-right: 10px;
+}
+.menu_item h1{
+    font-family: 'Roboto', sans-serif;
+}
+.menu_item h1:before{
+    content: url('../images/menu_icon.png');
+}
+.food_video h1:before{
+    content: url('../images/video_icon.png');
+}
+.testimonials h1:before{
+    content: url('../images/testimonials.png');
+    position: absolute;
+    left: -30px;
+}
+.testimonials {
+    position: relative;
+    margin-right: 0;
+}
+.item_list{
+    margin-top: 20px;
+}
+.item_list li{
+    margin-right: 20px;
+    width: 120px;
+    float: left;
+    font-size: 13px;
+    text-align: left;
+}
+.item_list a{
+    font-family: 'Roboto', sans-serif;
+    color: #513a2d;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

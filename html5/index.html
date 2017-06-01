@@ -5,8 +5,8 @@
     <title>Cafe and Restaurant</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>-->
 </head>
 <body>
 <div id="bg">
@@ -35,10 +35,11 @@
                     <li class="direct"><a href="#">FAQ</a></li>
                     <li class="direct"><a href="#">Directions</a></li>
                     <li class="direct"><a href="#">Help</a></li>
-                    <div class="input_search">
-                        <input type="text" placeholder="search">
-                    </div>
+
                 </ul>
+                <div class="input_search">
+                    <input type="text" placeholder="search">
+                </div>
 
             </div>
         </div>
@@ -58,75 +59,108 @@
                     <li><a href="#">contact us</a></li>
                 </ul>
             </nav>
-            <article id="main_content">
-                <section id="banner">
-                    <img src="images/coffecup copy.png" alt="">
-                    <a class="order" href="#">Order Now</a>
-                </section>
-                <section id="section_content">
-                    <article class="product dailymenu">
+            <div id="main_content">
+                <article>
+                    <section id="banner">
+                        <img src="images/coffecup copy.png" alt="">
+                        <a class="order" href="#">Order Now</a>
+                    </section>
+                    <section id="section_content">
+                        <article class="product daily_menu">
+                            <h1>Daily Menu</h1>
+                            <div class="product_image daily_image">
+                                <a href=""><img src="images/daily_menu.jpg"></a>
+                            </div>
 
-                        <h1>Daily Menu</h1>
-                        <img src="images/daily_menu.jpg">
-                        <p>Agedame tuna roll</p>
-                        <p>Maki de atún crujiente, servido sobre chips de tempura, salsa dinamita y salsa ponzu.</p>
+                            <p>Agedame tuna roll</p>
+                            <p>Maki de atún crujiente, servido sobre chips de tempura, salsa dinamita y salsa ponzu.</p>
 
-                    </article>
-                    <article class="product special">
+                        </article>
+                        <article class="product special">
+                            <h1>special</h1>
+                            <div class="product_image  special_image">
+                                <a href="#"><img src="images/special.jpg"></a>
+                            </div>
+                            <p>Agedame tuna roll</p>
+                            <p>Maki de atún crujiente, servido sobre chips de tempura, salsa dinamita y salsa ponzu.</p>
+                        </article>
+                        <article class="product catering">
+                            <h1>catering</h1>
+                            <div class="product_image catering_image">
+                                <a href="#"><img src="images/catering.jpg"></a>
+                            </div>
+                            <p>Agedame tuna roll</p>
+                            <p>Maki de atún crujiente, servido sobre chips de tempura, salsa dinamita y salsa ponzu.</p>
+                        </article>
+                    </section>
+                    <section id="content_bottom">
+                        <article class="product menu_item">
+                            <h1>menu items</h1>
+                            <ul class="item_list">
+                                <li><a href="#">Appetizers</a></li>
+                                <li><a href="#">Hot tapas</a></li>
+                                <li><a href="#">Soups and Salads</a></li>
+                                <li><a href="#">Accompaniments</a></li>
+                                <li><a href="#">Vegetarian Dish</a></li>
+                                <li><a href="#">Chicken Dish</a></li>
+                                <li><a href="#">Seafood Dish</a></li>
+                                <li><a href="#">Vegetarian Sauce</a></li>
+                                <li><a href="#">Red Sauce</a></li>
+                                <li><a href="#">Seafood Dish</a></li>
+                                <li><a href="#">Vegetarian Sauce</a></li>
+                                <li><a href="#">Red Sauce</a></li>
+                                <li><a href="#">Seafood Sauce</a></li>
+                                <li><a href="#">Desserts</a></li>
+                                <li><a href="#">Seafood Dish</a></li>
+                                <li><a href="#">Vegetarian Sauce</a></li>
+                                <li><a href="#">Red Sauce</a></li>
+                            </ul>
+                        </article>
+                        <article class="product food_video">
+                            <h1>food video</h1>
+                            <div id="VideoForFood">
+                                <iframe width="278" height="151" src="https://www.youtube.com/embed/lJclQekSfSM" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                            <div class="SeeMore">
+                                <a href="#">See More Video ></a>
+                            </div>
+                        </article>
+                        <article class="product testimonials">
+                            <h1>testimonials</h1>
+                            <p class="para">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quam justo, interdum vitae fermentum nec, volutpat ac massa. Cras posuere massa in diam euismod pretium. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            </p>
+                            <p><quote class="quote"><cite>Rafi,</cite>GraphicsFuel.com </quote>
+                            </p>
+                        </article>
+                    </section>
+                    <section id="connect">
+                        <a href="#" class="twitter"></a>
+                        <a href="#" class="facebook"></a>
+                        <a href="#" class="link_int"></a>
+                        <a href="#" class="mail_me"></a>
+                    </section>
+                </article>
+                <footer class="footer">
+                    <nav class="sub_nav">
+                        <ul class="sub_menu">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">menu</a></li>
+                            <li><a href="#">Dinner</a></li>
+                            <li><a href="#">Lunch</a></li>
+                            <li><a href="#">specials</a></li>
+                            <li><a href="#">Party</a></li>
+                            <li><a href="#">catering</a></li>
+                            <li><a href="#">contact us</a></li>
+                        </ul>
+                    </nav>
+                    <p>Copyright © 2011 <a href="#">Cafe&Restaurant.com</a>. All Rights Reserved. Site Designed by <a href="#">GraphicsFuel.com</a> </p>
+                </footer>
+            </div>
 
-                        <h1>special</h1>
-                        <img src="images/special.jpg">
-                        <p>Agedame tuna roll</p>
-                        <p>Maki de atún crujiente, servido sobre chips de tempura, salsa dinamita y salsa ponzu.</p>
-                    </article>
-                    <article class="product catering">
-                        <h1>catering</h1>
-                        <img src="images/catering.jpg">
-                        <p>Agedame tuna roll</p>
-                        <p>Maki de atún crujiente, servido sobre chips de tempura, salsa dinamita y salsa ponzu.</p>
-                    </article>
-                </section>
-                <section id="content_bottom">
-                    <article class="product menu_item">
-                        <h1>menu items</h1>
-                        <div class="item_list">
-                            <li><a href="#">Appetizers</a></li>
-                            <li><a href="#">Hot tapas</a></li>
-                            <li><a href="#">Soups and Salads</a></li>
-                            <li><a href="#">Accompaniments</a></li>
-                            <li><a href="#">Vegetarian Dish</a></li>
-                            <li><a href="#">Chicken Dish</a></li>
-                            <li><a href="#">Seafood Dish</a></li>
-                            <li><a href="#">Vegetarian Sauce</a></li>
-                            <li><a href="#">Red Sauce</a></li>
-                            <li><a href="#">Seafood Dish</a></li>
-                            <li><a href="#">Vegetarian Sauce</a></li>
-                            <li><a href="#">Red Sauce</a></li>
-                            <li><a href="#">Seafood Sauce</a></li>
-                            <li><a href="#">Desserts</a></li>
-                            <li><a href="#">Seafood Dish</a></li>
-                            <li><a href="#">Vegetarian Sauce</a></li>
-                            <li><a href="#">Red Sauce</a></li>
-                        </div>
-                    </article>
-                    <article class="product food_video">
-                        <h1>food video</h1>
-                    </article>
-                    <article class="product testimonials">
-                        <h1>testimonials</h1>
-                    </article>
-
-                    </article>
-                </section>
-            </article>
-            <footer>
-            </footer>
         </div>
     </div>
 </div>
-
-
-</div>
-
 </body>
 </html>

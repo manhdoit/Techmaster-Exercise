@@ -7,14 +7,14 @@ body {
 	font-size: 24px;
 	width: 960px;
 	margin: 0 auto;
-	padding: 10px 0px;
+	padding: 10px 0;
 }
 #menu a {
 	display: inline-block;
 	font-weight: bold;
 	text-transform: uppercase;
 	text-decoration: none;
-	padding: 20px 10px 20px 0px;
+	padding: 20px 10px 20px 0;
 	color: #b30000;
 
 }
@@ -30,14 +30,13 @@ body {
 	height: 400px;
 	overflow: hidden;
 	float: left;
-	margin: 10px 0px 0px 20px;
+	margin: 10px 0 0 20px;
 
 }
 .hair_image img{
 
 	float: left;
 	max-width: 320px;
-	float: left;
 	transition: 1s;
 }
 .hair_image > img:hover {

@@ -95,7 +95,7 @@
                                     <input type="checkbox" id="remember" name="remember"/><label for="remember">Hiển thị mật
                                     khẩu</label><br/>
                                 </div>
-                                <div class="input-field">
+                                <div class="input-field ">
                                     <button id="signup-btn" type="submit" value="Đăng ký">Đăng Ký</button>
                                 </div>
                             </form>
@@ -105,6 +105,8 @@
             </div>
         </div>
     </div>
+
+
     <!--********************************#navigation************************-->
     <nav class="navbar navbar-default">
 
@@ -129,12 +131,12 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="index.html">Trang chủ</a></li>
-                    <li><a href="car-list.html">Danh sách xe</a></li>
+                    <li><a href="index.html" >Trang chủ</a></li>
+                    <li><a href="car-list.html" class="active">Danh sách xe</a></li>
                     <li><a href="#">Link</a></li>
                     <li><a href="#">Link</a></li>
                     <li><a href="#">Link</a></li>
-                    <li><a href="contact.html" class="active">Liên hệ</a></li>
+                    <li><a href="contact.html">Liên hệ</a></li>
 
                 </ul>
             </div><!-- /.navbar-collapse -->
@@ -143,100 +145,111 @@
 
 </header>
 <!--End Header-->
-<!--********************Search Bar*******************-->
-<section class="page-section breadcrumbs text-center page-section-contact">
-    <div class="container">
-        <div class="page-header">
-            <h1>Liên hệ</h1>
-        </div>
 
-    </div>
-</section>
-<section>
-    <section class="page-section color">
-        <div class="container">
+<section id="content">
 
-            <div class="row">
-
-                <div class="col-md-4">
-                    <div class="contact-info">
-
-                        <h2 class="block-title"><span>Địa chỉ</span></h2>
-
-                        <div class="media-list">
-                            <div class="media">
-                                <i class="contact-icon pull-left fa fa-home"></i>
-                                <div class="media-body">
-                                    <strong>Địa chỉ:</strong><br>
-                                    ngõ 4, Nguyễn Đình Chiểu, Hai Bà Trưng, Hà Nội
-                                </div>
-                            </div>
-                            <div class="media">
-                                <i class="contact-icon pull-left fa fa-phone"></i>
-                                <div class="media-body">
-                                    <strong>Điện thoại:</strong><br>
-                                    (012) 345-7689
-                                </div>
-                            </div>
-
-
-                            <div class="media">
-                                <i class="contact-icon pull-left fa fa-envelope-o"></i>
-                                <div class="media-body">
-                                    <strong>Email:</strong><br>
-                                    <a href="#">manhdo.it@gmail.com</a>
-                                </div>
-                            </div>
-
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="col-md-8 text-left">
-
-                    <h2 class="block-title"><span>Contact Form</span></h2>
-
-                    <!-- Contact form -->
-                    <form name="contact-form" method="post" action="#" class="contact-form" id="contact-form">
-
-                        <div class="outer required">
-                            <div class="form-group af-inner">
-                                <label class="sr-only" for="name">Name</label>
-                                <input type="text" name="name" id="name" placeholder="Họ tên" value="" size="30" data-toggle="tooltip" title="" class="form-control placeholder" data-original-title="Name is required">
-                            </div>
-                        </div>
-
-                        <div class="outer required">
-                            <div class="form-group af-inner">
-                                <label class="sr-only" for="email">Email</label>
-                                <input type="text" name="email" id="email" placeholder="Email" value="" size="30" data-toggle="tooltip" title="" class="form-control placeholder" data-original-title="Email is required">
-                            </div>
-                        </div>
-
-                        <div class="form-group af-inner">
-                            <label class="sr-only" for="input-message">Tin nhắn</label>
-                            <textarea name="message" id="input-message" placeholder="Nội dung" rows="4" cols="50" data-toggle="tooltip" title="" class="form-control placeholder" data-original-title="Message is required"></textarea>
-                        </div>
-
-                        <div class="outer required">
-                            <div class="form-group af-inner">
-                                <input type="submit" name="submit" class="form-button form-button-submit btn btn-theme btn-theme-dark" id="submit_btn" value="Gửi">
-                            </div>
-                        </div>
-
-                    </form>
-                    <!-- /Contact form -->
-
-                </div>
-
+    <div class="container CarForRent">
+        <div class="heading">
+            <div class="heading-wrap">
+                <div class="heading-wrap-before"></div>
+                <h2>Danh sách xe thuê</h2>
+                <div class="heading-wrap-after"></div>
             </div>
 
         </div>
-        <div id="map" style="width: 100%; height: 350px;">
-    </section>
-</section>
 
+    </div>
+
+<div class="container">
+
+    <div class="col-md-9 content car-listing" id="content">
+
+        <!-- Car Listing -->
+
+        <div class="thumbnail no-border no-padding thumbnail-car-card clearfix">
+            <div class="media">
+                <a class="media-link" href="#">
+                    <img src="../images/vencer-sarthe-supercar.jpg" alt="">
+                    <span class="icon-view"><strong><i class="fa fa-eye"></i></strong></span>
+                </a>
+            </div>
+            <div class="caption">
+
+                <h4 class="caption-title"><a href="#">VW POLO TRENDLINE 2.0 TDI</a></h4>
+                <h5 class="caption-title-sub">Chỉ từ 500.000đ/ngày</h5>
+                <div class="caption-text">Vivamus eget nibh. Etiam cursus leo vel metus. Nulla facilisi. Aenean nec eros. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia.</div>
+                <table class="table">
+                    <tbody><tr>
+                        <td><i class="fa fa-car"></i> 2013</td>
+                        <td><i class="fa fa-dashboard"></i> Diesel</td>
+                        <td><i class="glyphicon glyphicon-cd"></i> Có lái</td>
+                        <td><i class="fa fa-road"></i> 25000</td>
+                        <td class="buttons"><a class="btn-theme" href="#">Thuê xe</a></td>
+                    </tr>
+                    </tbody></table>
+            </div>
+        </div>
+
+
+
+        <!-- /Car Listing -->
+
+        <!-- Pagination -->
+        <div class="pagination-wrapper">
+            <ul class="pagination">
+                <li class="disabled"><a href="#"><i class="fa fa-angle-double-left"></i> Trang Trước</a></li>
+                <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">Trang sau <i class="fa fa-angle-double-right"></i></a></li>
+            </ul>
+        </div>
+        <!-- /Pagination -->
+    </div>
+
+    <aside class="col-md-3 sidebar" id="sidebar">
+        <div class="form-group has-icon has-label search-form">
+            <h1 class="search-title">Tìm Xe</h1>
+            <form action="">
+                <select name="city" id="city" class=" form-inline col-xs-12">
+                    <option value="">Tỉnh/Thành Phố</option>
+                    <option value="">Đà Nẵng</option>
+                    <option value="">Tp Hồ Chí Minh</option>
+                </select>
+                <select name="District" id="District" class="form-inline col-xs-12 ">
+                    <option value="">Quận/Huyện</option>
+                    <option value="">Đà Nẵng</option>
+                    <option value="">Tp Hồ Chí Minh</option>
+
+                </select>
+                <select name="city" id="abc" class="form-inline col-xs-12 ">
+                    <option value="">Hãng Xe</option>
+                    <option value="">Đà Nẵng</option>
+                    <option value="">Tp Hồ Chí Minh</option>
+                </select>
+                <select name="District" id="cde" class="form-inline col-xs-12 ">
+                    <option value="">Tên xe</option>
+                    <option value="">Đà Nẵng</option>
+                    <option value="">Tp Hồ Chí Minh</option>
+                </select>
+                <select name="city" id="edc" class="form-inline col-xs-12 ">
+                    <option value="">Số Ghế Ngồi</option>
+                    <option value="">4</option>
+                    <option value="">7</option>
+                    <option value="">16</option>
+                    <option value="">24</option>
+                </select>
+                <select name="District" id="gfd" class="form-inline col-xs-12 ">
+                    <option value="">Có lái/Tự lái</option>
+                    <option value="">Có lái</option>
+                    <option value="">Tự lái</option>
+                </select>
+                <button type="button" class="btn btn-primary btn-lg btn-lg btn-search">Tìm Kiếm</button>
+            </form>
+        </div>
+    </aside>
+</section><!--end section #content-->
 
 <footer class="footer">
     <div class="container">
@@ -287,11 +300,7 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
         integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
         crossorigin="anonymous"></script>
-<script
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC2ZV2aJB9np66LwQ3-RsL892SNNVenM4g&callback=initMap">
-</script>
 <script type="text/javascript" src="../script/js.js">
 </script>
-
 </body>
 </html>

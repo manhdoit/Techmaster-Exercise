@@ -8,9 +8,6 @@ ul, li {
     list-style: none;
 }
 
-/*a {*/
-/*text-decoration: none;*/
-/*}*/
 .main_header {
     padding-bottom: 100px;
     background-image: url("../images/banner-slider-4.jpg");
@@ -140,7 +137,7 @@ ul, li {
 
     background-color: #fdca00;
     text-align: center;
-    margin: 0 0 20px 0;
+    margin: 15px 0 6px 0;
     border: none;
 }
 
@@ -470,18 +467,10 @@ ul, li {
     color: #6c7481;
 }
 .search-form form select{
-    /*height: 40px;*/
-    /*font-size: 15px;*/
-    /*margin-bottom: 10px;*/
-    /*!* font-weight: bold; *!*/
-    /*background: #ffffff;*/
-    /*border: 1px solid #d3d3d3;*/
-    /*color: #000;*/
+
     height: 40px;
     font-size: 15px;
-    margin: 10px 5px;
-    /* margin-bottom: 10px; */
-    /* font-weight: bold; */
+    margin: 10px 0px;
     background: #ffffff;
     border: 1px solid #d3d3d3;
     color: #000;
@@ -592,17 +581,88 @@ background-color: rgba(42, 218, 114, 0.55);
     border: 5px solid #fff;
     margin-bottom: 20px;
 }
+
 .info-user td{
     padding: 10px;
 }
 /*------Tin da dang-------*/
+.list-car-posted{
+    text-align: center;
+    margin-bottom: 20px;
+    border-bottom: #e6e6e6 solid 1px;
+    padding: 14px 0 22px;
+}
 .my-car-img{
-
+    /*height: 160px;*/
+    padding: 0;
+    border: 5px solid #fff;
+}
+.my-car-img img {
+    width: 100%;
+}
+.car-posted-status a {
+    padding: 5px 15px;
+    font-size: 18px;
+}
+.deactive_car{
+    opacity: 0.5;
+}
+.deactive-btn{
+    background: #333;
+    color: #fff;
+}
+.deactive_car .car-posted-status a{
 
 }
-
 .clear-bold{
     clear: both;
+}
+/*-----------------------------Modal Rent-Car-------------------------*/
+.modal-car-content{
+    width: 100%;
+    background-color: #fff;
+    border-radius: 5px;
+}
+.title-rent-car{
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #5a5a5a;
+    margin-bottom: 10px;
+    padding-bottom: 4px;
+    border-bottom: 1px solid #c3be90;
+}
+.form-rent-car input[type=text], .form-rent-car input[type=date]{
+    width: 100%;
+    float: left;
+    border: 1px solid #f1f1f1;
+    border-radius: 5px;
+    font-size: 18px;
+    margin: 10px 0;
+    padding: 5px;
+}
+.modal-car-content .text-area{
+    width: 100%;
+    border: 1px solid #f1f1f1;
+}
+.button-sub{
+    display: block;
+    margin-top: 5px;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 12px;
+    padding: 10px 23px;
+    background: #115dab;
+    font-weight: 100;
+    border: 1px solid #fff;
+}
+
+.close-rent-form{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 25px;
 }
 /*--------------------------------Media Query----------------------------*/
 @media (min-width: 768px) {
@@ -662,10 +722,16 @@ background-color: rgba(42, 218, 114, 0.55);
     .searchBar {
         border-radius: 5px;
     }
-    .search-form form select{
 
-        width: 300px;
+    .search-form form select {
+        height: 40px;
+        font-size: 15px;
+        margin: 10px 10px 10px 10px;
+        background: #ffffff;
+        border: 1px solid #d3d3d3;
+        color: #000;
     }
+
     .btn-search{
         margin-top: 35px;
     }
@@ -706,7 +772,7 @@ background-color: rgba(42, 218, 114, 0.55);
     }
     .thumbnail-car-card .caption-text {
         margin-bottom: 0px;
-        padding: 25px 10px 28px 10px;
+        /*padding: 25px 10px 28px 10px;*/
         color: #7f7f7f;
     }
     .widget.shadow {
@@ -724,12 +790,23 @@ background-color: rgba(42, 218, 114, 0.55);
     }
 /*-------------------------------User setting------------------------*/
     .nav-account li a{
-        padding: 0 30px;
+        /*padding: 0 30px;*/
         font-size: 20px;
     }
-    .my-car-img img{
-        max-width: 200px;
+    .my-car-img {
+        width: 25%;
     }
+    .name-car {
+        width: 50%;
+    }
+    .car-posted-status {
+        width: 25%;
+    }
+    /*-------Modal bookcar---------*/
+    .form-rent-car input[type=text], .form-rent-car input[type=date] {
+        /*width: 50%;*/
+    }
+
 }
 
 /*--------------------------------------Footer-----------------------------*/

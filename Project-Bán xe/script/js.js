@@ -48,18 +48,7 @@ $('.carousel').carousel({
     pause: "false"
 });
 // ---------------------------Google Map API-------------------------
-function initMap() {
-    var techmaster = {lat: 21.0147874, lng: 105.8464177};
-    var map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 18,
-        center: techmaster
-    });
-    var marker = new google.maps.Marker({
-        position: techmaster,
-        map: map
-    });
-}
-initMap()
+
 
 // ------------------------------------------------
 
@@ -116,3 +105,4 @@ $(".tab_drawer_heading").click(function() {
  to add border to right side
  of last tab */
 $('ul.tabs li').last().addClass("tab_last");
+// --------------------

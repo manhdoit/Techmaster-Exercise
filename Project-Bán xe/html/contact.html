@@ -292,6 +292,20 @@
 </script>
 <script type="text/javascript" src="../script/js.js">
 </script>
+<script>
+    function initMap() {
+        var techmaster = {lat: 21.0147874, lng: 105.8464177};
+        var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 18,
+            center: techmaster
+        });
+        var marker = new google.maps.Marker({
+            position: techmaster,
+            map: map
+        });
+    }
+    initMap()
+</script>
 
 </body>
 </html>

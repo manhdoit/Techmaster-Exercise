@@ -179,7 +179,8 @@
                 <h5 class="caption-title-sub">Chỉ từ 500.000đ/ngày</h5>
                 <div class="caption-text">Vivamus eget nibh. Etiam cursus leo vel metus. Nulla facilisi. Aenean nec eros. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia.</div>
                 <div class="buttons">
-                    <a class="btn btn-theme" href="#">Thuê xe</a>
+                    <span class="btn btn-theme btn-rent-car" data-toggle="modal" data-target="#rent-car"
+                          href="#">Thuê xe</span>
                 </div>
                 <table class="table">
                     <tbody><tr>
@@ -192,9 +193,74 @@
                     </tbody></table>
             </div>
         </div>
+<!--Modal rent car-->
+        <div class="modal fade" id="rent-car">
+            <div class="modal-dialog">
+                <div class="modal-car-content">
+                    <div class="close-rent-form close" data-dismiss="modal" aria-label="Close">
+                        <div class="glyphicon glyphicon-remove-sign"></div>
+                    </div>
+                    <div class="modal-header">
+                        <h1>THUÊ XE</h1>
+
+                    </div>
+                    <div class="modal-body ">
+
+                        <div class="list-new-box">
+                            <form action="#" class="form-rent-car fadeInLeft">
+
+                                <h2 class="title-rent-car ">
+                                    * Thông tin khách hàng
+                                </h2>
+                                <div class="col-lg-6">
+                                    <input name="name" type="text" class="fo-input" placeholder="Họ tên:" required="">
+                                </div>
+                                <div class="col-lg-6">
+                                    <input name="address" type="text" class="fo-input" placeholder="Địa chỉ:" required="">
+                                </div>
+                                <div class="col-lg-6"><input name="phone" type="text" class="fo-input"
+                                                             placeholder="Số điện thoại" required=""></div>
+                                <div class="col-lg-6"><input name="email" type="text" class="fo-input" placeholder="Email"
+                                                             required=""></div>
+                                <div class="col-lg-6">
+                                    <input name="departure_place" type="text" class="fo-input" placeholder="Nơi nhận xe"
+                                           required="">
+                                </div>
+                                <div class="col-lg-6"><input name="arrival_place" type="text" class="fo-input"
+                                                             placeholder="Nơi trả xe" required="">
+                                </div>
+                                <div class="col-lg-6 date-picker">
+                                    <label for="received_date">Ngày nhận:</label>
+                                    <input id="received_date" type="date" class="fo-input"
+                                           placeholder="Ngày nhận" required="">
+                                </div>
+                                <div class="col-lg-6 date-picker">
+                                    <label for="return_date">Ngày trả:</label>
+                                    <input id="return_date" type="date" class="fo-input"
+                                           placeholder="Ngày trả" required="">
+                                </div>
+                                <div class="col-xs-4">
+                                    <p class="fo-cap-small">Hình thức:</p>
+                                </div>
+                                <div class="col-xs-3">
+                                    <input type="radio" name="type" id="options1" value="1" required=""> Tự lái
+                                </div>
+                                <div class="col-xs-3">
+                                    <input type="radio" name="type" id="options2" value="2" required=""> Có lái
+                                </div>
 
 
+                                <textarea class="text-area" name="note" rows="5" class="fo-input" placeholder="Ghi chú"
+                                          required=""></textarea>
+                                <button name="submit" type="submit" class="button-sub">ĐẶT XE NGAY</button>
+                            </form>
+                        </div>
+                    </div>
 
+                </div>
+            </div>
+        </div>
+<!--*****************-->
         <!-- /Car Listing -->
 
         <!-- Pagination -->

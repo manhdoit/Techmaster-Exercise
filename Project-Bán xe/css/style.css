@@ -561,17 +561,18 @@ background-color: rgba(42, 218, 114, 0.55);
     display: block;
     float: left;
     background: #fff;
-    border: 1px solid;
+    border: 2px solid #fff;
     border-radius: 5px 5px 0 0;
     -webkit-transition: all ease .5s;
     -moz-transition: all ease .5s;
     -ms-transition: all ease .5s;
     -o-transition: all ease .5s;
     transition: all ease .5s;
+    border-right: 1px solid #ffb4b4;
 }
 .tab-content{
     margin-top: -1px;
-    border: 1px solid;
+    border: 2px solid #fff;
     padding: 10px
 }
 .image-user img{
@@ -582,8 +583,41 @@ background-color: rgba(42, 218, 114, 0.55);
     margin-bottom: 20px;
 }
 
-.info-user td{
+.info-user .item{
+    padding: 30px 0 60px 10px;
+    border-bottom: 1px solid #b5d4dc;
+}
+.item span.edit{
+    position: absolute;
+    top: 0;
     padding: 10px;
+    right: 0;
+    background: #fff;
+    border-radius: 5px;
+}
+
+.item label{
+    font-weight: 600;
+    display: block;
+    font-size: 18px;
+    margin: 16px 15px 10px 0;
+}
+.input-text{
+    background: #F3F3F3;
+    margin: 0;
+    font-size: 18px;
+    color: #576366;
+    width: 100%;
+    padding: 12px 15px;
+    outline: 0;
+    border: 2px solid #e8ebed;
+    -webkit-appearance: none;
+    border-radius: 5px;
+    box-shadow: 0;
+    box-sizing: border-box;
+    -webkit-transition: .2s;
+    transition: .2s;
+    border: none;
 }
 /*------Tin da dang-------*/
 .list-car-posted{
@@ -617,6 +651,63 @@ background-color: rgba(42, 218, 114, 0.55);
 .clear-bold{
     clear: both;
 }
+/*--------------------Đăng tin----------------*/
+.vehicle_images {
+    display: table;
+    width: 100%;
+}
+.vehicle_images > div {
+    float: left;
+    height: 95px;
+    margin: 0 10px 10px 0;
+    width: 150px;
+}
+/*------style đăng ảnh-------*/
+/*.upload_more_img {*/
+    /*position: relative;*/
+    /*border: #eee solid 1px;*/
+/*}*/
+/*.upload_more_img input {*/
+    /*background: rgba(0, 0, 0, 0) none repeat scroll 0 0;*/
+    /*border: 0 none;*/
+    /*box-shadow: none;*/
+    /*cursor: pointer;*/
+    /*font-size: 0;*/
+    /*height: 100%;*/
+    /*left: 0;*/
+    /*max-width: 100%;*/
+    /*opacity: 0;*/
+    /*position: absolute;*/
+    /*right: 0;*/
+    /*top: 0;*/
+    /*width: 100%;*/
+/*}*/
+/*.upload_more_img:after {*/
+    /*background-image: url(../images/addmore_img.png);*/
+    /*background-position: center center;*/
+    /*background-repeat: no-repeat;*/
+    /*content: "";*/
+    /*height: 100%;*/
+    /*left: 0;*/
+    /*position: absolute;*/
+    /*top: 0;*/
+    /*width: 100%;*/
+    /*z-index: -1;*/
+/*}*/
+/*-----------style thông tin xe cơ bản------------*/
+.field-title h3{
+    text-decoration: underline;
+    border-left: 3px solid #cecece;
+    margin: 40px 0 25px;
+    padding: 12px 13px 12px 28px;
+}
+
+
+
+/*.form-control{*/
+    /*width: 30%;*/
+    /*float: left;*/
+/*}*/
 /*-----------------------------Modal Rent-Car-------------------------*/
 .modal-car-content{
     width: 100%;
@@ -657,13 +748,17 @@ background-color: rgba(42, 218, 114, 0.55);
     font-weight: 100;
     border: 1px solid #fff;
 }
-
+.date-picker label{
+    float: left;
+    margin: 0;
+}
 .close-rent-form{
     position: absolute;
     top: 5px;
     right: 5px;
     font-size: 25px;
 }
+
 /*--------------------------------Media Query----------------------------*/
 @media (min-width: 768px) {
     /*----------Top page------------*/

@@ -106,3 +106,14 @@ $(".tab_drawer_heading").click(function() {
  of last tab */
 $('ul.tabs li').last().addClass("tab_last");
 // --------------------
+// -----------------Edit user information---------
+$('.edit').on("click", function(){
+    $('.input-focus').removeClass('input-focus');
+    $('input').prop('disabled', true);
+    $(this).parent().children('input').prop('disabled', false);
+    $(this).parent().children('input').addClass('input-focus');
+
+    $('input').focus();
+    // $(this).closest('input').removeAttr('disabled');
+})
+// ----------------------

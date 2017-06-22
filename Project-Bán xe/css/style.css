@@ -55,6 +55,7 @@ ul, li {
     float: right;
     line-height: 70px;
 }
+
 .before-log button {
     background: none;
     border: none;
@@ -165,7 +166,7 @@ ul, li {
     background-image: -moz-linear-gradient(top, #fdca00, #518e00);
     background-image: -ms-linear-gradient(top, #fdca00, #518e00);
     background-image: -o-linear-gradient(top, #fdca00, #518e00);
-    background-image: linear-gradient(to bottom,#fdca00, #518e00);
+    background-image: linear-gradient(to bottom, #fdca00, #518e00);
     text-decoration: none;
 }
 
@@ -289,8 +290,6 @@ ul, li {
     font-weight: bold;
 }
 
-
-
 /*---------------------------end #navigation-------------------------------*/
 
 /*---------------------Search Bar-----------------*/
@@ -313,16 +312,17 @@ ul, li {
     background-color: #fff;
 }
 
-
 /*=-------------------------page section Home page------------------------------*/
 .page-section.image {
     background: url("../images/banner-slider-1.jpg") center top no-repeat;
     background-attachment: fixed;
     background-size: cover;
 }
-.caption-title-sub{
+
+.caption-title-sub {
     margin: 20px;
 }
+
 .background_section {
     padding-top: 70px;
     padding-bottom: 70px;
@@ -398,19 +398,22 @@ ul, li {
     transition: all 0.2s ease-in-out;
 }
 
-.table .buttons{
+.table .buttons {
     background: #fdca00;
     cursor: pointer;
 }
-.table .buttons>.btn-theme{
+
+.table .buttons > .btn-theme {
     color: #fff;
     text-decoration: none;
 }
-.table .buttons:hover{
+
+.table .buttons:hover {
     background-color: #333;
 
 }
-.table{
+
+.table {
     margin-bottom: 0;
 }
 
@@ -451,22 +454,25 @@ ul, li {
     padding-right: 0;
     margin-top: 50px;
 }
+
 /*-----------Search form--------Sidebar List car page---------------------*/
-#sidebar{
+#sidebar {
     border: 1px solid #e9e9e9;
     background-color: #fff;
-    -webkit-border-radius:5px;
-    -moz-border-radius:5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
     border-radius: 5px;
     margin-bottom: 50px;
 }
-.search-title{
+
+.search-title {
     padding: 25px 20px;
 
     background-color: #f5f6f8;
     color: #6c7481;
 }
-.search-form form select{
+
+.search-form form select {
 
     height: 40px;
     font-size: 15px;
@@ -476,7 +482,6 @@ ul, li {
     color: #000;
 
 }
-
 
 /*--------------------------------Contact Page----------------------------*/
 .page-section-contact {
@@ -515,23 +520,25 @@ ul, li {
 .media-body strong {
     font-size: 1.5em;
 }
+
 /*-------------------------------User-Account------------------------*/
-.title-account{
+.title-account {
     margin-top: -100px;
     color: #f1f1f1;
     text-transform: uppercase;
 }
-/*.tab-user li {*/
 
-/*}*/
-.account-setting  {
+/*.tab-user li */
+
+.account-setting {
     margin-top: 51px;
     border-radius: 5px 5px 0px 0px;
     overflow: hidden;
     margin-bottom: 50px;
     padding: 0;
 }
-.nav-account{
+
+.nav-account {
     height: 50px;
     padding-left: 0;
     margin-bottom: 0;
@@ -539,22 +546,26 @@ ul, li {
     width: 100%;
     border-radius: 5px 5px 0px;
 }
-.nav-account li a{
+
+.nav-account li a {
     padding: 0px 10px;
     text-decoration: none;
 }
-.nav-account>li:hover {
-background-color: rgba(42, 218, 114, 0.55);
+
+.nav-account > li:hover {
+    background-color: rgba(42, 218, 114, 0.55);
     -webkit-transition: all ease .5s;
     -moz-transition: all ease .5s;
     -ms-transition: all ease .5s;
     -o-transition: all ease .5s;
     transition: all ease .5s;
 }
-.nav-account>li.active{
+
+.nav-account > li.active {
     background-color: rgba(0, 188, 212, 0.52);;
 }
-.nav-account li{
+
+.nav-account li {
     height: 50px;
     line-height: 50px;
     position: relative;
@@ -570,12 +581,14 @@ background-color: rgba(42, 218, 114, 0.55);
     transition: all ease .5s;
     border-right: 1px solid #ffb4b4;
 }
-.tab-content{
+
+.tab-content {
     margin-top: -1px;
     border: 2px solid #fff;
     padding: 10px
 }
-.image-user img{
+
+.image-user img {
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     border-radius: 50%;
@@ -583,26 +596,34 @@ background-color: rgba(42, 218, 114, 0.55);
     margin-bottom: 20px;
 }
 
-.info-user .item{
-    padding: 30px 0 60px 10px;
+.info-user .item {
+    padding: 0 0 10px 0;
     border-bottom: 1px solid #b5d4dc;
-}
-.item span.edit{
-    position: absolute;
-    top: 0;
-    padding: 10px;
-    right: 0;
-    background: #fff;
-    border-radius: 5px;
+
 }
 
-.item label{
+.info-user .item > .col-xs-12 {
+    float: none;
+
+}
+
+.item .edit {
+    position: absolute;
+    top: 0;
+    right: -20px;
+    font-size: 20px;
+}
+.item .edit span{
+    display: none;
+}
+.item label {
     font-weight: 600;
     display: block;
     font-size: 18px;
     margin: 16px 15px 10px 0;
 }
-.input-text{
+
+.input-text {
     background: #F3F3F3;
     margin: 0;
     font-size: 18px;
@@ -611,110 +632,122 @@ background-color: rgba(42, 218, 114, 0.55);
     padding: 12px 15px;
     outline: 0;
     border: 2px solid #e8ebed;
-    -webkit-appearance: none;
-    border-radius: 5px;
-    box-shadow: 0;
+
     box-sizing: border-box;
-    -webkit-transition: .2s;
+
     transition: .2s;
     border: none;
 }
+
+.input-focus {
+    background-color: #fff !important;
+}
+
 /*------Tin da dang-------*/
-.list-car-posted{
+.list-car-posted {
     text-align: center;
     margin-bottom: 20px;
     border-bottom: #e6e6e6 solid 1px;
     padding: 14px 0 22px;
 }
-.my-car-img{
+
+.my-car-img {
     /*height: 160px;*/
     padding: 0;
     border: 5px solid #fff;
 }
+
 .my-car-img img {
     width: 100%;
 }
+
 .car-posted-status a {
     padding: 5px 15px;
     font-size: 18px;
 }
-.deactive_car{
+
+.deactive_car {
     opacity: 0.5;
 }
-.deactive-btn{
+
+.deactive-btn {
     background: #333;
     color: #fff;
 }
-.deactive_car .car-posted-status a{
+
+.deactive_car .car-posted-status a {
 
 }
-.clear-bold{
+
+.clear-bold {
     clear: both;
 }
+
 /*--------------------Đăng tin----------------*/
 .vehicle_images {
     display: table;
     width: 100%;
 }
+
 .vehicle_images > div {
     float: left;
     height: 95px;
     margin: 0 10px 10px 0;
     width: 150px;
 }
+
 /*------style đăng ảnh-------*/
 /*.upload_more_img {*/
-    /*position: relative;*/
-    /*border: #eee solid 1px;*/
+/*position: relative;*/
+/*border: #eee solid 1px;*/
 /*}*/
 /*.upload_more_img input {*/
-    /*background: rgba(0, 0, 0, 0) none repeat scroll 0 0;*/
-    /*border: 0 none;*/
-    /*box-shadow: none;*/
-    /*cursor: pointer;*/
-    /*font-size: 0;*/
-    /*height: 100%;*/
-    /*left: 0;*/
-    /*max-width: 100%;*/
-    /*opacity: 0;*/
-    /*position: absolute;*/
-    /*right: 0;*/
-    /*top: 0;*/
-    /*width: 100%;*/
+/*background: rgba(0, 0, 0, 0) none repeat scroll 0 0;*/
+/*border: 0 none;*/
+/*box-shadow: none;*/
+/*cursor: pointer;*/
+/*font-size: 0;*/
+/*height: 100%;*/
+/*left: 0;*/
+/*max-width: 100%;*/
+/*opacity: 0;*/
+/*position: absolute;*/
+/*right: 0;*/
+/*top: 0;*/
+/*width: 100%;*/
 /*}*/
 /*.upload_more_img:after {*/
-    /*background-image: url(../images/addmore_img.png);*/
-    /*background-position: center center;*/
-    /*background-repeat: no-repeat;*/
-    /*content: "";*/
-    /*height: 100%;*/
-    /*left: 0;*/
-    /*position: absolute;*/
-    /*top: 0;*/
-    /*width: 100%;*/
-    /*z-index: -1;*/
+/*background-image: url(../images/addmore_img.png);*/
+/*background-position: center center;*/
+/*background-repeat: no-repeat;*/
+/*content: "";*/
+/*height: 100%;*/
+/*left: 0;*/
+/*position: absolute;*/
+/*top: 0;*/
+/*width: 100%;*/
+/*z-index: -1;*/
 /*}*/
 /*-----------style thông tin xe cơ bản------------*/
-.field-title h3{
+.field-title h3 {
     text-decoration: underline;
     border-left: 3px solid #cecece;
     margin: 40px 0 25px;
     padding: 12px 13px 12px 28px;
 }
 
-
-
 /*.form-control{*/
-    /*width: 30%;*/
-    /*float: left;*/
+/*width: 30%;*/
+/*float: left;*/
 /*}*/
 /*-----------------------------Modal Rent-Car-------------------------*/
-.modal-car-content{
+.modal-car-content {
     width: 100%;
     background-color: #fff;
     border-radius: 5px;
 }
-.title-rent-car{
+
+.title-rent-car {
     font-size: 1.5em;
     font-weight: bold;
     color: #5a5a5a;
@@ -722,7 +755,8 @@ background-color: rgba(42, 218, 114, 0.55);
     padding-bottom: 4px;
     border-bottom: 1px solid #c3be90;
 }
-.form-rent-car input[type=text], .form-rent-car input[type=date]{
+
+.form-rent-car input[type=text], .form-rent-car input[type=date] {
     width: 100%;
     float: left;
     border: 1px solid #f1f1f1;
@@ -731,11 +765,13 @@ background-color: rgba(42, 218, 114, 0.55);
     margin: 10px 0;
     padding: 5px;
 }
-.modal-car-content .text-area{
+
+.modal-car-content .text-area {
     width: 100%;
     border: 1px solid #f1f1f1;
 }
-.button-sub{
+
+.button-sub {
     display: block;
     margin-top: 5px;
     margin-right: auto;
@@ -748,11 +784,13 @@ background-color: rgba(42, 218, 114, 0.55);
     font-weight: 100;
     border: 1px solid #fff;
 }
-.date-picker label{
+
+.date-picker label {
     float: left;
     margin: 0;
 }
-.close-rent-form{
+
+.close-rent-form {
     position: absolute;
     top: 5px;
     right: 5px;
@@ -785,7 +823,6 @@ background-color: rgba(42, 218, 114, 0.55);
         margin-top: 0;
         margin-right: 20px;
     }
-
 
     .before-log button:hover {
         color: #fdca00;
@@ -827,22 +864,26 @@ background-color: rgba(42, 218, 114, 0.55);
         color: #000;
     }
 
-    .btn-search{
+    .btn-search {
         margin-top: 35px;
     }
+
     /*----------------------------Car list--------------------------------*/
-    .media{
+    .media {
         position: relative;
     }
+
     .car-listing .thumbnail-car-card .media {
         float: left;
         width: 40%;
 
     }
-    .car-listing .thumbnail-car-card .caption{
+
+    .car-listing .thumbnail-car-card .caption {
         width: 60%;
         float: right;
     }
+
     .thumbnail-car-card {
         background-color: #ffffff;
         border-color: #e9e9e9;
@@ -850,26 +891,32 @@ background-color: rgba(42, 218, 114, 0.55);
         -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
         box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
     }
+
     .thumbnail-car-card.hover,
     .thumbnail-car-card:hover {
         border-color: #e9e9e9;
     }
+
     .thumbnail-car-card.no-border {
         border: solid 1px #e9e9e9;
     }
+
     .thumbnail-car-card.no-border.hover,
     .thumbnail-car-card.no-border:hover {
         border: solid 1px #e9e9e9;
     }
+
     .thumbnail-car-card .caption-title {
         font-size: 15px;
         font-weight: 700;
     }
+
     .thumbnail-car-card .caption-text {
         margin-bottom: 0px;
         /*padding: 25px 10px 28px 10px;*/
         color: #7f7f7f;
     }
+
     .widget.shadow {
         background-color: #ffffff;
         border: solid 1px #f0f0f0;
@@ -877,26 +924,77 @@ background-color: rgba(42, 218, 114, 0.55);
         -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
         box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
     }
+
     .widget.shadow .widget-title {
         padding: 25px 20px;
         margin: 0;
         background-color: #f5f6f8;
         color: #6c7481;
     }
-/*-------------------------------User setting------------------------*/
-    .nav-account li a{
+
+    /*-------------------------------User setting------------------------*/
+    .nav-account li a {
         /*padding: 0 30px;*/
         font-size: 20px;
     }
+
     .my-car-img {
         width: 25%;
     }
+
     .name-car {
         width: 50%;
     }
+
     .car-posted-status {
         width: 25%;
     }
+
+    /*-------------------------------User-Account------------------------*/
+    .input-text {
+        width: 70%;
+        background: #F3F3F3;
+        margin: 0;
+        font-size: 18px;
+        color: #576366;
+        padding: 12px 15px;
+        outline: 0;
+        border: 2px solid #e8ebed;
+        -webkit-appearance: none;
+        border-radius: 5px;
+        box-shadow: 0;
+        box-sizing: border-box;
+        -webkit-transition: .2s;
+        transition: .2s;
+        border: none;
+    }
+
+    .info-user .item {
+        padding: 30px 0 60px 10px;
+        border-bottom: 1px solid #b5d4dc;
+    }
+
+    .info-user .item .col-xs-12 {
+        float: left;
+    }
+
+    .item .edit {
+        position: absolute;
+        cursor: pointer;
+        margin-right: 20px;
+        padding: 10px;
+        top: 0;
+
+        right: 0;
+        background: #fff;
+        border-radius: 5px;
+        font-size: 14px;
+
+    }
+    .item .edit span{
+        display: inline-block;
+    }
+
     /*-------Modal bookcar---------*/
     .form-rent-car input[type=text], .form-rent-car input[type=date] {
         /*width: 50%;*/
@@ -939,6 +1037,7 @@ background-color: rgba(42, 218, 114, 0.55);
     font-size: 18px;
     margin-right: 8px;
 }
+
 .list-default li .glyphicon {
     margin-right: 10px;
 }

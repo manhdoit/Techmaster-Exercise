@@ -9,8 +9,8 @@ ul, li {
 }
 
 .main_header {
-    padding-bottom: 100px;
-    background-image: url("../images/banner-slider-4.jpg");
+    /*padding-bottom: 100px;*/
+    /*background-image: url("../images/banner-slider-4.jpg");*/
     background-attachment: fixed;
     background-size: cover;
 }
@@ -138,7 +138,7 @@ ul, li {
 
     background-color: #fdca00;
     text-align: center;
-    margin: 15px 0 6px 0;
+    margin: 15px 0 15px 0;
     border: none;
 }
 
@@ -190,7 +190,7 @@ ul, li {
 
 /*--------------------#navigation------------------------*/
 .navbar-default {
-    background-color: rgba(0, 0, 0, 0.8);
+    background: #14181c;
     border-color: #e7e7e7;
 }
 
@@ -246,7 +246,7 @@ ul, li {
     margin: 0 auto;
     text-align: center;
     /* height: 80px; */
-    background: rgba(0, 0, 0, 0.7);
+    background-color: #14181c;;
     position: relative;
     padding: 20px 0;
 }
@@ -292,25 +292,58 @@ ul, li {
 
 /*---------------------------end #navigation-------------------------------*/
 
-/*---------------------Search Bar-----------------*/
-.searchBar {
-    margin-top: 100px;
-    background-color: rgba(0, 0, 0, 0.8);
+#banner{
+    min-height: 700px;
+    background-image: url("../images/banner-slider-1.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 50px 20px 20px 20px;
+    margin-top: -20px;
     text-align: center;
-    padding: 25px 25px 20px 25px;
+}
+.caption-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: 100;
+    line-height: 1;
+    color: #ffffff;
+    clear: both;
+    display: inline-block;
+    text-transform: uppercase;
+    margin: 0 0 15px 0;
 
 }
+.caption-subtitle {
+    font-family: 'Raleway', sans-serif;
+    font-size: 50px;
+    font-weight: 900;
+    line-height: 1.5;
+    text-transform: uppercase;
+    color: #ffffff;
+    max-width: 700px;
+    margin: auto;
+    padding: 20px 0 40px 0;
+}
+/*---------------------Search Bar-----------------*/
+.searchBar {
+    border-radius: 5px;
+    background-color: rgba(20, 24, 28, 0.6);
+    text-align: center;
+    padding: 20px 20px 20px 20px;
 
+}
+.search-car select{
+    background: rgba(72, 38, 38, 0.5);
+    margin-bottom: 10px;
+    border-radius: 0;
+    height: 50px;
+    color: #fff;
+}
 .main_search_form h1 {
     color: #fff;
 }
 
-.main_search_form select {
-    font-size: 15px;
-    margin-bottom: 10px;
-    height: 45px;
-    background-color: #fff;
-}
+
 
 /*=-------------------------page section Home page------------------------------*/
 .page-section.image {
@@ -319,9 +352,9 @@ ul, li {
     background-size: cover;
 }
 
-.caption-title-sub {
-    margin: 20px;
-}
+/*.caption-title-sub {*/
+    /*margin: 20px;*/
+/*}*/
 
 .background_section {
     padding-top: 70px;
@@ -485,14 +518,15 @@ ul, li {
 
 /*--------------------------------Contact Page----------------------------*/
 .page-section-contact {
-    margin-top: -120px;
+    /*margin-top: -120px;*/
     background-color: #f5f5f5;
 }
 
-.page-section-contact .page-header {
+.page-header {
     padding-bottom: 25px;
     margin: 42px 0 20px;
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid #ddd;
+    color: #333;
 }
 
 .page-section-contact .page-header h1 {
@@ -613,9 +647,11 @@ ul, li {
     right: -20px;
     font-size: 20px;
 }
-.item .edit span{
+
+.item .edit span {
     display: none;
 }
+
 .item label {
     font-weight: 600;
     display: block;
@@ -797,6 +833,157 @@ ul, li {
     font-size: 25px;
 }
 
+/*=======================Style blog page===============================*/
+.blog-banner {
+    /*margin-top: -100px;*/
+    padding-bottom: 100px;
+    text-align: center;
+    color: white;
+}
+
+.blog-box {
+    margin-right: -15px;
+    margin-left: -15px;
+    padding: 10px;
+}
+
+.media-left img {
+    width: 100px;
+    margin-top: 20px;
+}
+
+.blog-sidebar {
+    border: 1px solid #ddd;
+    padding: 10px;
+    /*-webkit-border-radius:;*/
+    /*-moz-border-radius:;*/
+    border-radius: 5px;
+}
+
+.recent-car {
+    margin-top: -10px;
+}
+
+.recent-car .media {
+    border-bottom: 1px solid #ddd;
+}
+/*=======================Style Blog-detail==========================*/
+#blog-detail{
+    margin-top: 50px;
+}
+
+.comment {
+    float: left;
+    width: 100%;
+    background: #fff;
+    padding: 30px 100px 30px 48px;
+    position: relative;
+    margin-bottom: 20px;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
+}
+.comment-info {
+    border-bottom: 1px solid #dee1e2;
+    float: left;
+    margin-bottom: 15px;
+    padding-bottom: 12px;
+    width: 100%;
+}
+.comment p {
+    font-size: 13px;
+    line-height: 26px;
+    color: #898989;
+}
+.comment-info span {
+    float: left;
+    font-size: 13px;
+    font-style: italic;
+    line-height: 14px;
+}
+.comments-thread li {
+    float: left;
+    padding-left: 70px;
+    position: relative;
+    width: 100%;
+    list-style: none;
+}
+.comment .avatar {
+    border: 10px solid #f9f9f9;
+    overflow: hidden;
+    position: absolute;
+    left: -70px;
+    top: 30px;
+    border-radius: 5px;
+    width: 110px;
+}
+.avatar img {
+    width: 100%;
+    border-radius: 5px;
+}
+.comment-info span i {
+    color: #d20023;
+}
+.pragraph{
+    margin-top: 20px;
+    overflow: hidden;
+}
+.pragraph img{
+    max-width: 100%;
+}
+.blog-share {
+    float: right;
+    text-align: right;
+}.blog-box .title {
+     color: #d20023;
+ }
+.blog-share .social-list-2 {
+    margin-bottom: 0px;
+    padding: 0px;
+}
+.social-list-2 li {
+    text-align: center;
+    list-style: none;
+    display: inline-block;
+}
+.blog-share .social-list-2 li a {
+    width: 29px;
+    height: 29px;
+    line-height: 29px;
+    text-align: center;
+    display: inline-block;
+    font-size: 11px;
+    margin: 2px 4px;
+    color: #fff;
+    border-radius: 50%;
+}
+.contact-form form .input-text {
+    width: 100%;
+    /*padding: 10px 17px;*/
+    /*font-size: 13px;*/
+    border: 1px solid #e8e7e7;
+    outline: none;
+    color: #6c6c6c;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 3px;
+}
+.contact-form form textarea {
+    min-height: 150px;
+    background-color: #fff;
+
+}
+.answer-comment .answer-comment-text{
+    width: 100%;
+    height: 50px;
+    border: 1px solid #ddd;
+}
+.ans-comment-btn{
+    color: #337ab7;
+    cursor: pointer;
+}
+.ans-comment-btn:hover{
+    color: #23527c;
+    text-decoration: underline;
+}
 /*--------------------------------Media Query----------------------------*/
 @media (min-width: 768px) {
     /*----------Top page------------*/
@@ -851,19 +1038,10 @@ ul, li {
     }
 
     /*------------Search Bar-----------------*/
-    .searchBar {
-        border-radius: 5px;
+    .search-car select {
+        width: 400px;
+        margin-right: 10px;
     }
-
-    .search-form form select {
-        height: 40px;
-        font-size: 15px;
-        margin: 10px 10px 10px 10px;
-        background: #ffffff;
-        border: 1px solid #d3d3d3;
-        color: #000;
-    }
-
     .btn-search {
         margin-top: 35px;
     }
@@ -908,6 +1086,7 @@ ul, li {
 
     .thumbnail-car-card .caption-title {
         font-size: 15px;
+        margin-top: 20px;
         font-weight: 700;
     }
 
@@ -991,7 +1170,8 @@ ul, li {
         font-size: 14px;
 
     }
-    .item .edit span{
+
+    .item .edit span {
         display: inline-block;
     }
 

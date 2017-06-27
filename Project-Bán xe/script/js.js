@@ -12,11 +12,11 @@ $('.user-modal').on('show.bs.modal', function (event) {
     $(this).find('.tab-pane#' + tabId).addClass('active in');
 });
 $('.logged').hide()
-$('#login-btn').click(function(){
+$('#login-btn').click(function () {
     $('.before-log').hide();
-    $('.logged').css('display','flex');
+    $('.logged').css('display', 'flex');
 });
-$('#logout-btn').click(function(){
+$('#logout-btn').click(function () {
     $('.logged').hide();
     $('.before-log').show();
     event.preventDefault();
@@ -54,14 +54,14 @@ $('.multi-item-carousel').carousel({
 
 // for every slide in carousel, copy the next slide's item in the slide.
 // Do the same for the next, next item.
-$('.multi-item-carousel .item').each(function(){
+$('.multi-item-carousel .item').each(function () {
     var next = $(this).next();
     if (!next.length) {
         next = $(this).siblings(':first');
     }
-    next.children(':first-child').clone().appendTo($(this));
+    // next.children(':first-child').clone().appendTo($(this));
 
-    if (next.next().length>0) {
+    if (next.next().length > 0) {
         next.next().children(':first-child').clone().appendTo($(this));
     } else {
         $(this).siblings(':first').children(':first-child').clone().appendTo($(this));
@@ -73,11 +73,11 @@ $('.multi-item-carousel .item').each(function(){
 // ------------------------------------------------
 
 // Back to top button
-(function() {
-    $(document).ready(function() {
-        return $(window).scroll(function() {
+(function () {
+    $(document).ready(function () {
+        return $(window).scroll(function () {
             return $(window).scrollTop() > 200 ? $("#back-to-top").addClass("show") : $("#back-to-top").removeClass("show")
-        }), $("#back-to-top").click(function() {
+        }), $("#back-to-top").click(function () {
             return $("html,body").animate({
                 scrollTop: "0"
             })
@@ -86,38 +86,37 @@ $('.multi-item-carousel .item').each(function(){
 }).call(this);
 
 
-
 // ------------
 
 $(".tab_content").hide();
 $(".tab_content:first").show();
 
 /* if in tab mode */
-$("ul.tabs li").click(function() {
+$("ul.tabs li").click(function () {
 
     $(".tab_content").hide();
     var activeTab = $(this).attr("rel");
-    $("#"+activeTab).fadeIn();
+    $("#" + activeTab).fadeIn();
 
     $("ul.tabs li").removeClass("active");
     $(this).addClass("active");
 
     $(".tab_drawer_heading").removeClass("d_active");
-    $(".tab_drawer_heading[rel^='"+activeTab+"']").addClass("d_active");
+    $(".tab_drawer_heading[rel^='" + activeTab + "']").addClass("d_active");
 
 });
 /* if in drawer mode */
-$(".tab_drawer_heading").click(function() {
+$(".tab_drawer_heading").click(function () {
 
     $(".tab_content").hide();
     var d_activeTab = $(this).attr("rel");
-    $("#"+d_activeTab).fadeIn();
+    $("#" + d_activeTab).fadeIn();
 
     $(".tab_drawer_heading").removeClass("d_active");
     $(this).addClass("d_active");
 
     $("ul.tabs li").removeClass("active");
-    $("ul.tabs li[rel^='"+d_activeTab+"']").addClass("active");
+    $("ul.tabs li[rel^='" + d_activeTab + "']").addClass("active");
 });
 
 
@@ -127,7 +126,7 @@ $(".tab_drawer_heading").click(function() {
 $('ul.tabs li').last().addClass("tab_last");
 // --------------------
 // -----------------Edit user information---------
-$('.edit').on("click", function(){
+$('.edit').on("click", function () {
     $('.input-focus').removeClass('input-focus');
     $('input').prop('disabled', true);
     $(this).parent().children('input').prop('disabled', false);
@@ -138,6 +137,7 @@ $('.edit').on("click", function(){
 })
 // ----------------------
 
+<<<<<<< HEAD
 // ===============Click comment in blog================
 var angle = 0;
 function gallerySpin(sign) {
@@ -149,3 +149,9 @@ function gallerySpin(sign) {
     }
     spinner.setAttribute("style","-webkit-transform: rotateY("+ angle +"deg); -moz-transform: rotateY("+ angle +"deg); transform: rotateY("+ angle +"deg);");
 }
+=======
+// ===============Swiper List car in homepage================
+
+
+
+>>>>>>> 4dff11a6d9e2ab80391654f6368a10b52dce26f5

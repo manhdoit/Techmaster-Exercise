@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <title>Thuê Xe</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.2.7/css/swiper.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.2.7/css/swiper.min.css">
 
     <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">-->
     <link rel="stylesheet" type="text/css" href="../font-awesome-4.7.0/css/font-awesome.min.css">
@@ -139,8 +141,6 @@
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="index.html" class="active">Trang chủ</a></li>
                     <li><a href="car-list.html">Danh sách xe</a></li>
-                    <li><a href="#">Link</a></li>
-                    <li><a href="#">Link</a></li>
                     <li><a href="blog.html">Blog</a></li>
                     <li><a href="contact.html">Liên hệ</a></li>
 
@@ -148,8 +148,6 @@
             </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
     </nav>
-
-
 </header>
 <section id="banner">
     <div class="caption-content">
@@ -167,30 +165,53 @@
                     <form action="" class="search-car">
                         <select name="city" id="city" class="col-xs-12 ">
                             <option value="">Tỉnh/Thành Phố</option>
-                            <option value="">Đà Nẵng</option>
+                            <option value="">Hà Nội</option>
                             <option value="">Tp Hồ Chí Minh</option>
+                            <option value="">Đà Nẵng</option>
+                            <option value="">Hải Phòng</option>
+                            <option value="">Quảng Ninh</option>
+                            <option value="">Bình Dương</option>
+                            <option value="">Cần Thơ</option>
+                            <option value="">Hải Dương</option>
+                            <option value="">Ninh Bình</option>
                         </select>
 
                         <select name="District" id="District" class="col-xs-12 ">
                             <option value="">Quận/Huyện</option>
-                            <option value="">Đà Nẵng</option>
-                            <option value="">Tp Hồ Chí Minh</option>
+                            <option value="">Ba Đình</option>
+                            <option value="">Hoàn Kiếm</option>
+                            <option value="">Hai Bà Trưng</option>
+                            <option value="">Hoàng Mai</option>
+                            <option value="">Hà Đông</option>
+                            <option value="">Sơn Tây</option>
+                            <option value="">Sóc Sơn</option>
+                            <option value="">Chương Mỹ</option>
 
                         </select>
                         <select name="city" id="abc" class="col-xs-12 ">
                             <option value="">Hãng Xe</option>
-                            <option value="">Đà Nẵng</option>
-                            <option value="">Tp Hồ Chí Minh</option>
+                            <option value="">HuynDai</option>
+                            <option value="">Toyota</option>
+                            <option value="">Chevrolet</option>
+                            <option value="">LandCruiser</option>
+                            <option value="">Landrover</option>
+                            <option value="">Mecedes</option>
+                            <option value=""></option>
+                            <option value=""></option>
                         </select>
-                        <select name="District" id="cde" class="col-xs-12 ">
-                            <option value="">Tên xe</option>
-                            <option value="">Đà Nẵng</option>
-                            <option value="">Tp Hồ Chí Minh</option>
-                        </select>
+                        <input type="text" name="District" id="cde" class="col-xs-12 " placeholder="Nhập tên xe...">
+                            <!--<option value="">Tên xe</option>-->
+                            <!--<option value="">Đà Nẵng</option>-->
+                            <!--<option value="">Tp Hồ Chí Minh</option>-->
+                        <!--</input>-->
                         <select name="city" id="edc" class="col-xs-12 ">
                             <option value="">Số Ghế Ngồi</option>
-                            <option value="">Đà Nẵng</option>
-                            <option value="">Tp Hồ Chí Minh</option>
+                            <option value="">4</option>
+                            <option value="">7</option>
+                            <option value="">16</option>
+                            <option value="">29</option>
+                            <option value="">Khác..</option>
+
                         </select>
                         <select name="District" id="gfd" class="col-xs-12 ">
                             <option value="">Có lái/Tự lái</option>
@@ -198,9 +219,10 @@
                             <option value="">Tự lái</option>
                         </select>
 
-                        <button type="button" class="btn btn-primary btn-lg btn-search">Tìm Kiếm</button>
+                        <button type="button" class="btn btn-primary btn-lg btn-search"><a href="ans-search.html">Tìm
+                            Kiếm</a></button>
                     </form>
-<div class="clear-bold"></div>
+                    <div class="clear-bold"></div>
 
                 </div>
             </div>
@@ -210,10 +232,9 @@
 
 </section>
 <!--End Header-->
-<!--********************Search Bar*******************-->
 
-<!--End Search Bar-->
 <section id="content">
+<<<<<<< HEAD
     <div class="container">
         <h1>Use Bootstrap's carousel to show multiple items per slide.</h1>
         <!--<div class="row">-->
@@ -458,6 +479,9 @@
         <span style="float:right" class="ss-icon" onclick="gallerySpin('')">&gt;</span>
     </div>
     <div class="container CarForRent">
+=======
+    <div class="container swiper-car">
+>>>>>>> 4dff11a6d9e2ab80391654f6368a10b52dce26f5
         <div class="heading">
             <div class="heading-wrap">
                 <div class="heading-wrap-before"></div>
@@ -466,6 +490,7 @@
             </div>
 
         </div>
+<<<<<<< HEAD
         <div class="row_1">
 
             <div class=" col-lg-4 col-md-6 car-list">
@@ -480,24 +505,197 @@
                         <h4 class="caption-title"><a href="#">VW POLO TRENDLINE 2.0 TDI</a></h4>
                         <div class="caption-title-sub">500.000đ/ngày</div>
                         <div class="buttons">
+=======
+        <!-- Slider main container -->
+        <div class="swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div id="s-1" class="swiper-slide">
+                    <div class="thumbnail no-border no-padding thumbnail-car-card">
+                        <div class="media">
+                            <a class="media-link" data-gal="prettyPhoto" href="car-detail.html">
+                                <img src="../images/swiper-slide-1.jpg" alt="">
+                                <span class="icon-view"><strong><i class="fa fa-eye"></i></strong></span>
+                            </a>
+                        </div>
+                        <div class="caption text-center">
+                            <h4 class="caption-title"><a href="car-detail.html">Toyota Camry 2.0G</a></h4>
+                            <div class="caption-title-sub">500.000đ/ngày</div>
+                            <div class="buttons">
                             <span class="btn btn-theme btn-rent-car" data-toggle="modal" data-target="#rent-car"
                                   href="#">Thuê xe</span>
+                            </div>
+                            <table class="table">
+                                <tbody>
+                                <tr>
+                                    <td><i class="fa fa-car"></i> 2013</td>
+                                    <td><i class="fa fa-dashboard"></i> Diesel</td>
+                                    <td><i class="fa fa-cog"></i> Auto</td>
+                                    <td><i class="fa fa-road"></i> 25000</td>
+                                </tr>
+                                </tbody>
+                            </table>
                         </div>
-                        <table class="table">
-                            <tbody>
-                            <tr>
-                                <td><i class="fa fa-car"></i> 2013</td>
-                                <td><i class="fa fa-dashboard"></i> Diesel</td>
-                                <td><i class="fa fa-cog"></i> Auto</td>
-                                <td><i class="fa fa-road"></i> 25000</td>
-                            </tr>
-                            </tbody>
-                        </table>
                     </div>
                 </div>
+                <div id="s-2" class="swiper-slide">
+                    <div class="thumbnail no-border no-padding thumbnail-car-card">
+                        <div class="media">
+                            <a class="media-link" data-gal="prettyPhoto" href="car-detail.html">
+                                <img src="../images/bg_banner.jpg" alt="">
+                                <span class="icon-view"><strong><i class="fa fa-eye"></i></strong></span>
+                            </a>
+                        </div>
+                        <div class="caption text-center">
+                            <h4 class="caption-title"><a href="car-detail.html">Mercedes-Benz C200 2017</a></h4>
+                            <div class="caption-title-sub">500.000đ/ngày</div>
+                            <div class="buttons">
+                            <span class="btn btn-theme btn-rent-car" data-toggle="modal" data-target="#rent-car"
+                                  href="#">Thuê xe</span>
+                            </div>
+                            <table class="table">
+                                <tbody>
+                                <tr>
+                                    <td><i class="fa fa-car"></i> 2013</td>
+                                    <td><i class="fa fa-dashboard"></i> Diesel</td>
+                                    <td><i class="fa fa-cog"></i> Auto</td>
+                                    <td><i class="fa fa-road"></i> 25000</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div id="s-3" class="swiper-slide">
+                    <div class="thumbnail no-border no-padding thumbnail-car-card">
+                        <div class="media">
+                            <a class="media-link" data-gal="prettyPhoto" href="car-detail.html">
+                                <img src="../images/bmw_emw_m3_diski_serie.jpg" alt="">
+                                <span class="icon-view"><strong><i class="fa fa-eye"></i></strong></span>
+                            </a>
+                        </div>
+                        <div class="caption text-center">
+                            <h4 class="caption-title"><a href="car-detail.html">Lexus RX 350</a></h4>
+                            <div class="caption-title-sub">500.000đ/ngày</div>
+                            <div class="buttons">
+                            <span class="btn btn-theme btn-rent-car" data-toggle="modal" data-target="#rent-car"
+                                  href="#">Thuê xe</span>
+                            </div>
+                            <table class="table">
+                                <tbody>
+                                <tr>
+                                    <td><i class="fa fa-car"></i> 2013</td>
+                                    <td><i class="fa fa-dashboard"></i> Diesel</td>
+                                    <td><i class="fa fa-cog"></i> Auto</td>
+                                    <td><i class="fa fa-road"></i> 25000</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div id="s-4" class="swiper-slide">
+                    <div class="thumbnail no-border no-padding thumbnail-car-card">
+                        <div class="media">
+                            <a class="media-link" data-gal="prettyPhoto" href="car-detail.html">
+                                <img src="../images/swiper-slide-3.jpg" alt="">
+                                <span class="icon-view"><strong><i class="fa fa-eye"></i></strong></span>
+                            </a>
+                        </div>
+                        <div class="caption text-center">
+                            <h4 class="caption-title"><a href="car-detail.html">BMW 3 Series</a></h4>
+                            <div class="caption-title-sub">500.000đ/ngày</div>
+                            <div class="buttons">
+                            <span class="btn btn-theme btn-rent-car" data-toggle="modal" data-target="#rent-car"
+                                  href="#">Thuê xe</span>
+                            </div>
+                            <table class="table">
+                                <tbody>
+                                <tr>
+                                    <td><i class="fa fa-car"></i> 2013</td>
+                                    <td><i class="fa fa-dashboard"></i> Diesel</td>
+                                    <td><i class="fa fa-cog"></i> Auto</td>
+                                    <td><i class="fa fa-road"></i> 25000</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div id="s-5" class="swiper-slide">
+                    <div class="thumbnail no-border no-padding thumbnail-car-card">
+                        <div class="media">
+                            <a class="media-link" data-gal="prettyPhoto" href="car-detail.html">
+                                <img src="../images/latest-offers-5.jpg" alt="">
+                                <span class="icon-view"><strong><i class="fa fa-eye"></i></strong></span>
+                            </a>
+                        </div>
+                        <div class="caption text-center">
+                            <h4 class="caption-title"><a href="car-detail.html">VW POLO TRENDLINE 2.0 TDI</a></h4>
+                            <div class="caption-title-sub">500.000đ/ngày</div>
+                            <div class="buttons">
+                            <span class="btn btn-theme btn-rent-car" data-toggle="modal" data-target="#rent-car"
+                                  href="#">Thuê xe</span>
+                            </div>
+                            <table class="table">
+                                <tbody>
+                                <tr>
+                                    <td><i class="fa fa-car"></i> 2013</td>
+                                    <td><i class="fa fa-dashboard"></i> Diesel</td>
+                                    <td><i class="fa fa-cog"></i> Auto</td>
+                                    <td><i class="fa fa-road"></i> 25000</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div id="s-6" class="swiper-slide">
+                    <div class="thumbnail no-border no-padding thumbnail-car-card">
+                        <div class="media">
+                            <a class="media-link" data-gal="prettyPhoto" href="car-detail.html">
+                                <img src="../images/swiper-slide-2.jpg" alt="">
+                                <span class="icon-view"><strong><i class="fa fa-eye"></i></strong></span>
+                            </a>
+                        </div>
+                        <div class="caption text-center">
+                            <h4 class="caption-title"><a href="car-detail.html">HUYNDAI GRAND I10 SEDAN</a></h4>
+                            <div class="caption-title-sub">500.000đ/ngày</div>
+                            <div class="buttons">
+>>>>>>> 4dff11a6d9e2ab80391654f6368a10b52dce26f5
+                            <span class="btn btn-theme btn-rent-car" data-toggle="modal" data-target="#rent-car"
+                                  href="#">Thuê xe</span>
+                            </div>
+                            <table class="table">
+                                <tbody>
+                                <tr>
+                                    <td><i class="fa fa-car"></i> 2013</td>
+                                    <td><i class="fa fa-dashboard"></i> Diesel</td>
+                                    <td><i class="fa fa-cog"></i> Auto</td>
+                                    <td><i class="fa fa-road"></i> 25000</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+
             </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"><i class="glyphicon glyphicon-chevron-left"></i></div>
+            <div class="swiper-button-next"><i class="glyphicon glyphicon-chevron-right"></i></div>
+
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
         </div>
+
     </div>
+
     <!--*************Modal Rent-car**************-->
     <div class="modal fade" id="rent-car">
         <div class="modal-dialog">
@@ -537,12 +735,12 @@
                             <div class="col-lg-6 date-picker">
                                 <label for="received_date">Ngày nhận:</label>
                                 <input id="received_date" type="date" class="fo-input"
-                                                         placeholder="Ngày nhận" required="">
+                                       placeholder="Ngày nhận" required="">
                             </div>
                             <div class="col-lg-6 date-picker">
                                 <label for="return_date">Ngày trả:</label>
                                 <input id="return_date" type="date" class="fo-input"
-                                                         placeholder="Ngày trả" required="">
+                                       placeholder="Ngày trả" required="">
                             </div>
                             <div class="col-xs-4">
                                 <p class="fo-cap-small">Hình thức:</p>
@@ -628,7 +826,9 @@
                 <ul class="list-default">
                     <li><span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span><a href="#">Việc Làm</a>
                     </li>
-                    <li><li><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span><a href="#">Giới Thiệu</a></li><a href="#">Giới Thiệu</a></li>
+                    <li>
+                    <li><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span><a href="#">Giới
+                        Thiệu</a></li>
 
                 </ul>
             </div>
@@ -654,7 +854,50 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
         integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
         crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.2.7/js/swiper.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.2.7/js/swiper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.2.7/js/swiper.jquery.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.2.7/js/swiper.jquery.min.js"></script>
 <script type="text/javascript" src="../script/js.js">
 </script>
+<script>
+    $(document).ready(function () {
+        //initialize swiper when document ready
+        var windowWidth = $(window).width();
+        var mySwiper = new Swiper('.swiper-container', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
+
+            centeredSlides: true,
+
+            // spaceBetween: '5%',
+            slidesPerView: 3,
+
+            // If we need pagination
+            pagination: '.swiper-pagination',
+
+            // Navigation arrows
+            nextButton: '.swiper-button-next',
+            prevButton: '.swiper-button-prev',
+
+            // And if we need scrollbar
+            scrollbar: '.swiper-scrollbar',
+            slideToClickedSlide: true
+        })
+
+        $('.swiper-slide a').click(function () {
+            //event.preventDefault()
+            if (!mySwiper.animating) {
+                console.log('NOTanimating - so click thru');
+            } else {
+                console.log('animating');
+                return false;
+            }
+        });
+
+    });
+</script>
+
 </body>
 </html>

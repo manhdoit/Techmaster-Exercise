@@ -14,6 +14,8 @@
     <link rel="stylesheet" type="text/css" href="../css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:600,600i,700,700i,800,800i|Ubuntu&amp;subset=vietnamese"
           rel="stylesheet">
+
+
 </head>
 <body>
 <header class="main_header">
@@ -200,9 +202,9 @@
                             <option value=""></option>
                         </select>
                         <input type="text" name="District" id="cde" class="col-xs-12 " placeholder="Nhập tên xe...">
-                            <!--<option value="">Tên xe</option>-->
-                            <!--<option value="">Đà Nẵng</option>-->
-                            <!--<option value="">Tp Hồ Chí Minh</option>-->
+                        <!--<option value="">Tên xe</option>-->
+                        <!--<option value="">Đà Nẵng</option>-->
+                        <!--<option value="">Tp Hồ Chí Minh</option>-->
                         <!--</input>-->
                         <select name="city" id="edc" class="col-xs-12 ">
                             <option value="">Số Ghế Ngồi</option>
@@ -234,6 +236,7 @@
 <!--End Header-->
 
 <section id="content">
+
     <div class="container swiper-car">
         <div class="heading">
             <div class="heading-wrap">
@@ -500,11 +503,64 @@
         </div>
     </div>
 </section><!--end section #content-->
+<section class="how-work-rent-car">
+
+    <div class="container">
+        <h2 class="text-center">
+            Làm sao để có thể lái xe
+        </h2>
+        <div>
+            <div id="carousel-how-it-works" class="carousel slide">
+                <hr class="hidden-xs">
+                <div class="carousel-inner slick-initialized slick-slider" role="toolbar">
+
+
+                    <div aria-live="polite" class="slick-list draggable">
+                        <div class="slick-track" role="listbox"
+                             style="opacity: 1; width: 942px; transform: translate3d(0px, 0px, 0px);">
+                            <div class="pull-left item slick-slide slick-current slick-active " tabindex="-1"
+                                 role="option" aria-describedby="slick-slide10" style="width: 314px;"
+                                 data-slick-index="0" aria-hidden="false">
+                                <div class="svg-holder">
+                                    <i class="glyphicon glyphicon-search"></i>
+                                </div>
+                                <h3>Tìm xe</h3>
+                                <p>Nhập địa điểm và xe bạn muốn tìm chiếc xe của mình.</p>
+                            </div>
+                            <div class="pull-left item slick-slide slick-active" tabindex="-1" role="option"
+                                 aria-describedby="slick-slide11" style="width: 314px;" data-slick-index="1"
+                                 aria-hidden="false">
+                                <div class="svg-holder">
+                                    <i class="glyphicon glyphicon-calendar"></i>
+                                </div>
+                                <h3>Đặt xe</h3>
+                                <p>Sau đó đặt lịch để thuê nó. Hãy đặt lịch sớm để được hưởng nhiều ưu đãi</p>
+                            </div>
+                            <div class="pull-left item slick-slide slick-active" tabindex="-1" role="option"
+                                 aria-describedby="slick-slide12" style="width: 314px;" data-slick-index="2"
+                                 aria-hidden="false">
+                                <div class="svg-holder">
+                                    <i class="glyphicon glyphicon-record"></i>
+                                </div>
+                                <h3>Lái xe của bạn</h3>
+                                <p>Lái chiếc xe bạn yêu thích đi bất kỳ nơi nào bạn muốn. Và đừng quên không lái xe khi
+                                    uống rượu bia...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 <section class="page-section image">
     <div class="background_section">
         <div class="container">
             <div class="row">
-                <div class="col-md-4 col-sm-6 wow fadeInDown" data-wow-offset="200" data-wow-delay="400ms">
+                <div class="section-title-index">
+                    <h1>Website thuê xe tốt nhất</h1>
+                </div>
+                <div class="col-md-4 col-sm-6 wow fadeInDown " data-wow-offset="200" data-wow-delay="400ms">
                     <div class="thumbnail thumbnail-counto no-border no-padding">
                         <div class="caption">
                             <div class="caption-icon"><i class="glyphicon glyphicon-map-marker"></i></div>
@@ -590,6 +646,7 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
         integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
         crossorigin="anonymous"></script>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.2.7/js/swiper.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.2.7/js/swiper.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.2.7/js/swiper.jquery.js"></script>
@@ -631,8 +688,28 @@
                 return false;
             }
         });
-
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            responsiveClass: true,
+            responsive: {
+                0: {
+                    items: 1,
+                    nav: true
+                },
+                600: {
+                    items: 3,
+                    nav: false
+                },
+//                1000:{
+//                    items:5,
+//                    nav:true,
+//                    loop:false
+//                }
+            }
+        })
     });
+
 </script>
 
 </body>

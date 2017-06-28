@@ -137,7 +137,21 @@ $('.edit').on("click", function () {
 })
 // ----------------------
 
+<<<<<<< HEAD
+// ===============Click comment in blog================
+var angle = 0;
+function gallerySpin(sign) {
+    var spinner = $("#spinner");
+    if (!sign) {
+        angle = angle + 45;
+    } else {
+        angle = angle - 45;
+    }
+    spinner.setAttribute("style","-webkit-transform: rotateY("+ angle +"deg); -moz-transform: rotateY("+ angle +"deg); transform: rotateY("+ angle +"deg);");
+}
+=======
 // ===============Swiper List car in homepage================
 
 
 
+>>>>>>> 4dff11a6d9e2ab80391654f6368a10b52dce26f5

@@ -1,7 +1,16 @@
 /**
  * Created by nguyenmanhdo on 6/5/17.
  */
-
+function getIndex(){
+  var numberWork = $('.count');
+  var todoLength =  $('#todo a');
+  var doingLength = $('#doing a');
+  var doneLength = $('#done a');
+  numberWork[0].innerHTML = $('#todo .collection-item').length;
+  numberWork[1].innerHTML = $('#doing .collection-item').length;
+  numberWork[2].innerHTML = $('#done .collection-item').length;
+  
+}
 var COLUMN_TYPE = ['todo', 'doing', 'done'];
 var DB = {
   getData: function () {//lay du lieu
@@ -43,6 +52,7 @@ var app = {
       this.addJobToList(type, jobName);
       //reset input
       $(input).val('');
+getIndex()
     }
   },
   addJobToList: function (type, jobName) {
@@ -61,8 +71,8 @@ var app = {
       var itemPosition = $('#' + columnType + ' .collection-item').index(item);
       list[columnType].splice(itemPosition,1);
       DB.setData(list);
-
       item.remove();
+      getIndex()
       modal.modal('close');
     });
   }
@@ -73,7 +83,7 @@ $(function () {
     var columnType = list[type] || [];
     columnType.forEach(function (jobName) {
       app.addJobToList(type, jobName);
-
+getIndex()
     })
   })
 
@@ -81,10 +91,28 @@ $(function () {
     connectWith: '.sort-list',
     placeholder: 'ul-state-highlight',
     start: function (event, ui) {
-      $(ui.item[0]).addClass('dragging')
+      $(ui.item[0]).addClass('dragging');
+      
+      ui.item.oldColumnType = ui.item[0].parentElement.getAttribute('id');
+
+      ui.item.oldItemPosition = ui.item.index();
+      getIndex()
     },
     stop: function (event, ui) {
-      $(ui.item[0]).removeClass('dragging')
+      $(ui.item[0]).removeClass('dragging');
+      var item = ui.item;
+      var oldColumnType = item.oldColumnType;
+      var oldItemPosition = item.oldItemPosition;
+      var newColumnType = item[0].parentElement.getAttribute('id');
+      var newItemPosition = item.index();
+      //Remove item from old position
+      list[oldColumnType].splice(oldItemPosition,1);
+      //Add item to new position
+      list[newColumnType].splice(newItemPosition, 0, item[0].innerText);
+
+      //Store data to localStorage
+      DB.setData(list);
+      getIndex()
     }
   })
 })

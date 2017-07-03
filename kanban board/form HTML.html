@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title></title>
     <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css" media="screen,projection"/>
+    <link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="css/style.css">
     <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"-->
@@ -19,8 +20,12 @@
 <section class="container">
     <div class="row">
         <div class="col m4">
-            <div class="card">
+            <div class="card todo">
+            <i class="fa fa-thumb-tack" aria-hidden="true"></i>
+            <div class="header">
                 <h3>ToDo (<span class="count">0</span>)</h3>
+            </div>
+                
                 <div class="collection sort-list" id="todo">
 
                 </div>
@@ -35,8 +40,12 @@
 
         </div>
         <div class="col m4">
-            <div class="card">
+            <div class="card doing">
+            <i class="fa fa-thumb-tack" aria-hidden="true"></i>
+            <div class="header">
                 <h3>Doing (<span class="count">0</span>)</h3>
+            </div>
+                
                 <div class="collection sort-list" id="doing">
 
 
@@ -51,8 +60,12 @@
 
         </div>
         <div class="col m4">
-            <div class="card" >
+            <div class="card done" >
+            <i class="fa fa-thumb-tack" aria-hidden="true"></i>
+            <div class="header">
                 <h3>Done (<span class="count">0</span>)</h3>
+            </div>
+                
                 <div class="collection sort-list" id="done">
 
                 </div>
@@ -67,6 +80,7 @@
         </div>
     </div>
 </section>
+
 <div id="modal-confirm" class="modal">
     <div class="modal-content">
         <h4>Confirm Delete</h4>

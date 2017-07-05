@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Thuê Xe</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">-->
+    <link rel="stylesheet" type="text/css" href="../font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:600,600i,700,700i,800,800i|Ubuntu&amp;subset=vietnamese"
+          rel="stylesheet">
+</head>
+<body>
+<header class="main_header">
+    <div class="top_header">
+        <div class="container">
+            <div class="support topHeader">
+                <div id="phoneNumber">0974 974 647</div>
+                <div id="mailForMe">manhdo.it@gmail.com</div>
+            </div>
+            <div class="login topHeader">
+            <span class="pull-right">
+				<div class="before-log">
+					<button data-toggle="modal" data-tabs="login" data-target=".user-modal">Đăng nhập</button>
+					<button data-toggle="modal" data-tabs="signup" data-target=".user-modal">Đăng ký</button>
+				</div>
+				<div class="logged">
+
+					<img src="../images/accout_picture.jpg">
+            <span class="name_user">Nguyễn Mạnh Đô</span>
+					<div class="dropdown">
+
+						<button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown"><span
+                    class="glyphicon glyphicon-align-justify"></span></button>
+						<ul class="dropdown-menu dropdown-menu-right">
+							<li><a href="user-account.html">Quản lý tài khoản</a></li>
+							<li><a id="logout-btn" href="#">Đăng xuất</a></li>
+						</ul>
+					</div>
+				</div>
+			</span>
+            </div>
+        </div>
+        <div class="modal fade user-modal" tabindex="-1">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li id="login-indicator" class="active">
+                            <a href="#login" role="tab" data-toggle="tab">Đăng nhập</a>
+                        </li>
+                        <li id="signup-indicator">
+                            <a href="#signup" role="tab" data-toggle="tab">Đăng ký</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane active fade in" id="login">
+                            <form>
+                                <div class="input-field e-mail">
+                                    <input type="email" name="Email" id="email_" class="" placeholder="Email"/>
+                                </div>
+                                <div class="input-field">
+                                    <input type="password" name="Password" id="password" class="pass-word"
+                                           placeholder="Mật khẩu"/>
+                                </div>
+                                <div class="input-field check-field">
+                                    <input type="checkbox" id="remember_user" name="remember"/><label
+                                        for="remember_user">Ghi nhớ tài
+                                    khoản</label><br/>
+                                </div>
+                                <div class="input-field">
+                                    <button id="login-btn" data-dismiss="modal" value="Đăng nhập">Đăng Nhập</button>
+                                </div>
+                                <!--<button data-toggle="modal" data-target="#reset-password" data-dismiss="modal"-->
+                                <!--class="btn btn-default"><i class="fa fa-question-circle-o"></i> Quên mật khẩu?-->
+                                <!--</button>-->
+                            </form>
+                        </div>
+                        <div role="tabpanel" class="tab-pane fade" id="signup">
+                            <form>
+                                <div class="input-field">
+                                    <input type="text" name="Name" id="name" placeholder="Họ tên"/>
+                                </div>
+                                <div class="input-field">
+                                    <input type="text" name="Phone" id="phone" placeholder="Số điện thoại"/>
+                                </div>
+                                <div class="input-field">
+                                    <input type="text" name="Phone" id="address" placeholder="Địa Chỉ"/>
+                                </div>
+                                <div class="input-field">
+                                    <input type="email" name="Email" id="email" class="e-mail" placeholder="Email"/>
+                                </div>
+                                <div class="input-field">
+                                    <input type="password" name="Password" id="password_" placeholder="Mật khẩu"/>
+                                </div>
+                                <div class="input-field check-field">
+                                    <input type="checkbox" id="remember" name="remember"/><label for="remember">Hiển thị
+                                    mật
+                                    khẩu</label><br/>
+                                </div>
+                                <div class="input-field ">
+                                    <button id="signup-btn" type="submit" value="Đăng ký">Đăng Ký</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--********************************#navigation************************-->
+    <nav class="navbar navbar-default">
+
+        <div class="container">
+
+            <div class="logo">
+                <a href="#">
+                    <img src="../images/logo-1.png" alt="">
+                </a>
+            </div>
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li><a href="car-list.html">Danh sách xe</a></li>
+                    <li><a href="blog.html"class="active">Blog</a></li>
+                    <li><a href="contact.html">Liên hệ</a></li>
+
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+
+</header>
+<!--End Header-->
+<section id="blog-detail">
+    <div class="blog-body content-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <!-- Blog Box Start -->
+                    <div class="thumbnail blog-box clearfix">
+                        <img src="../images/blog-01.jpeg" alt="blog-01">
+                        <!-- detail -->
+                        <div class="detail">
+                            <h1 class="title">
+                                <a href="blog-single.html">Ford Focus 1.5L Ecoboot Trend AT </a>
+                            </h1>
+                            <div class="header">
+                                <span><i class="fa fa-user"></i> <a href="#">Nguyen Manh Do</a></span>
+                                <span><i class="fa fa-clock-o"></i> <a>8/5/2016</a></span>
+
+                                <span><i class="fa fa-commenting-o"></i> <a href="#">3 Comment</a></span>
+                            </div>
+                            <!-- paragraph -->
+                            <div class="pragraph">
+                                <h4>Ford Focus 1.5 Ecoboost Trend AT 4 cửa – Ngoại thất trẻ trung, mạnh mẽ</h4>
+                                <p>
+                                    Mẫu Ford Focus 1.5L Ecoboost Trend AT 4 cửa sở hữu kiểu dáng mới với phong cách thể thao, hiện đại và cá tính. Đèn pha của Ford Focus 1.5L Ecoboost Trend AT 4 cửa là loại Halogen siêu sáng được vuốt dài và kết hợp với đèn LED có công dụng chiếu sáng. Cụm lưới tản nhiệt hình thang khá giống với những chiếc Aston Martin thời thượng mang dáng dấp thể thao nhưng vẫn toát lên vẻ sang trọng với nhiều thanh chrome sáng bóng được xếp song song nhau. Nắp ca-pô với những đường gân dập nổi chạy dài từ đầu xe sang 2 bên tạo điểm nhấn mạnh mẽ, chắc chắn cho chiếc xe. Khung xe được sử dụng chất liệu thép boron siêu cứng đảm bảo độ chắc chắn gấp 4 lần so với các loại thép thông thường.
+                                </p>
+
+                                <p>
+                                    Kích thước của Ford Focus 1.5L Ecoboost Trend AT 4 cửa lần lượt là dài x rộng x cao: 4,358mm x 1,823mm x 1,484mm. Phần đuôi xe được thiết kế theo kiểu đuôi cá với cụm đèn hậu được thiết kế thanh lịch và bắt mắt hơn, cản sau của xe cũng được chỉnh sửa sắc nét hơn, dáng thể thao với cảm biến lùi 4 điểm. Ford Focus 1.5L Ecoboost Trend AT 4 cửa với 7 màu đó là màu nâu hổ phách, màu xanh đại dương, bạc ánh trăng, đỏ ánh dưỡng, vàng ánh kim, trắng kim cương và cuối cùng là đen kim loại mang đến cho khách hàng nhiều sự lựa chọn đúng với sở thích của mình.
+                                </p>
+                                <img src="../images/ford-1.png" alt="">
+                                <h4>Ford Focus 1.5L Ecoboost Trend 4 của lắp đặt nội thất tiện nghi, hiện đại</h4>
+                                <p>
+                                    Ford Focus 1.5L Ecoboost Trend AT 4 cửa được trang bị nội thất rất đầy đủ và tiện nghi. Với tông màu đen chủ đạo và các chi tiết được mạ chrome sáng bóng mang lại cảm giác sang trọng, lịch lãm và hiện đại hơn các phiên bản trước của Ford Focus. Vô lăng và bảng điều khiển được thiết kế ít nút bấm và được bố trí trong tầm tay dễ dàng hơn trong việc sử dụng, mang lại sự trực quan, sinh động. Ford Focus 1.5L Ecoboost Trend AT 4 cửa có màn hình cảm ứng 4,5 inch có thể kết nối các thiết bị truyền thông, Audio, camera lùi… Hệ thống âm thanh nổi sẽ mang đến cho bạn cảm giác thư giãn tuyệt vời nhất.
+                                </p>
+                                <img src="../images/ford-2.jpeg" alt="">
+                                <p>Ford Focus 1.5L Ecoboost Trend AT 4 cửa được trang bị động cơ xăng Ecoboost thế hệ mới của Ford 1.5L, với hệ thống phun xăng trực tiếp kết hợp với tubor tăng áp nhằm tạo công suất lớn và tiết kiệm nhiên liệu. Ford Focus 1.5L Ecoboost Trend AT 4 cửa được trang bị hệ thống trợ lực lái thủy lực, hộp số tự động 6 cấp ly hợp kép giúp xe chuyển số mượt mà và đánh lái dễ dàng, giúp người lái xe vận hành xe một cách dễ dàng nhất, giúp cho các chuyến đi trở nên an toàn mà thoải mái.
+                                    <br>
+                                    Trên Ford Focus 1.5L Ecoboost Trend AT 4 cửa có đầy đủ các hệ thống an toàn tiêu chuẩn cao, đảm bảo an toàn tối đa cho hành khách trên xe, như dây đai an toàn cho các vị trí ngồi, 2 túi khí cho tài xế và hành khách phía trên,xe còn được bổ sung vùng hấp thụ xung lực ở phía trước và phía sau, khóa nhiên liệu có tác dụng không để cho nhiên liệu bơm vào động cơ khi va chạm xảy ra. Ngoài ra còn có các hệ thống an toàn khác như hệ thống chống bó cứng phanh ABS, hệ thống phân phối lực phanh điện tử EBD, cảnh báo khi không thắt dây an toàn, hệ thống đèn báo tai nạn khẩn cấp, hỗ trợ khởi hành ngang dốc (HLA), túi khí đôi, hệ thống chống trộm, kiểm soát hướng lực kéo, hệ thống cân bằng điện tử ESP, lưới tản nhiệt có khả năng tự động đóng mở, đèn sương mù, ghế lái có thể chỉnh tay nhiều hướng…
+                                </p>
+                                <img src="../images/ford-3.jpeg" alt="">
+
+                            </div>
+
+
+
+                        </div>
+                    </div>
+
+                    <!-- Comments Thread Start -->
+                    <div class="comments-thread clearfix">
+                        <h2 class="title">Bình luận</h2>
+                        <ul>
+                            <li>
+                                <div class="comment">
+                                    <div class="avatar">
+                                        <img src="../images/profile-01.jpeg" alt="profile-01">
+                                    </div>
+                                    <div class="comment-info">
+                                        <h4>Bill Gate</h4>
+                                        <span>
+                                        13:09 - <i>20/11/2016</i>
+                                    </span>
+                                    </div>
+                                    <p>Bạn là một người rất có tiềm năng.</p>
+                                    <div class="answer-comment">
+                                        <span class="ans-comment-btn">Trả lời</span>
+                                        <textarea class="answer-comment-text" name="message"></textarea>
+                                    </div>
+                                    
+                                </div>
+                                <!-- Comment -->
+                                <div class="comment">
+                                    <div class="avatar">
+                                        <img src="../images/profile-02.jpg" alt="profile-02">
+                                    </div>
+                                    <div class="comment-info">
+                                        <h4>Barack Obama</h4>
+                                        <span>
+                                        13:09 - <i>20/11/2016</i>
+                                    </span>
+                                    </div>
+                                    <p>Tôi muốn thuê một cái xe cho chuyến công du sang Việt Nam</p>
+                                    <div class="answer-comment">
+                                        <span class="ans-comment-btn">Trả lời</span>
+                                        <textarea class="answer-comment-text" name="message"></textarea>
+                                    </div>
+                                </div>
+                                <!-- Comment -->
+                                                                 <div class="comment">
+                                            <div class="avatar">
+                                                <img src="../images/profile-03.jpg" alt="profile-03">
+                                            </div>
+                                            <div class="comment-info">
+                                                <h4>Mark Zuckerberg</h4>
+                                                <span>
+                                                13:09 - <i>20/11/2016</i>
+                                            </span>
+                                            </div>
+                                            <p>Bác cứ liên hệ em nhé.</p>
+                                                                     <div class="answer-comment">
+                                                                         <span class="ans-comment-btn">Trả lời</span>
+                                                                         <textarea class="answer-comment-text" name="message"></textarea>
+                                                                     </div>
+                                        </div><!-- Comment -->
+
+                            </li>
+                            <li>
+                                <div class="comment">
+                                    <div class="avatar">
+                                        <img src="../images/profile-04.png" alt="profile-04">
+                                    </div>
+                                    <div class="comment-info">
+                                        <h4>Warren Buffett</h4>
+                                        <span>
+                                        13:05 - <i>21/09/2016</i>
+                                    </span>
+                                    </div>
+                                    <p>Các chú cứ chém gió hoài</p>
+                                    <div class="answer-comment">
+                                        <span class="ans-comment-btn">Trả lời</span>
+                                        <textarea class="answer-comment-text" name="message"></textarea>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Comments thread end -->
+                    <div class="contact-form">
+
+                        <form action="">
+                            <div class="row">
+
+                                <div class="col-md-12 col-sm-12 col-xs-12">
+                                    <div class="form-group">
+                                        <textarea class="input-text" name="message" placeholder="viết bình luận"></textarea>
+                                    </div>
+                                    <div class="form-group Btn">
+                                        <button type="submit" class="btn btn-submit">Bình luận</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-4 col-md-4">
+                <div class="heading-footer">
+                    <h3>TechMaster VietNam</h3>
+                </div>
+                <ul class="list-default">
+                    <li class="address"><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>Số 14,
+                        ngõ 4, Nguyễn Đình Chiểu, Hai Bà Trưng, Hà Nội
+                    </li>
+                    <li><span class="glyphicon glyphicon-globe" aria-hidden="true"></span><a
+                            href="#">www.techmaster.vn</a></li>
+                </ul>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-4">
+                <div class="heading-footer">
+                    <h3>Về Chúng Tôi</h3>
+                </div>
+
+                <ul class="list-default">
+                    <li><span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span><a href="#">Việc Làm</a>
+                    </li>
+                    <li><li><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span><a href="#">Giới Thiệu</a></li><a href="#">Giới Thiệu</a></li>
+
+                </ul>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-4">
+                <div class="heading-footer">
+                    <h3>Hỗ Trợ</h3>
+                </div>
+
+                <ul class="list-default">
+
+                    <li><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>0974.974.647</li>
+                    <li><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>manhdo.it@gmail.com</li>
+
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <div class="reserved"><p>© 2017 DESIGNED BY <span>manhdo.it</span>. ALL RIGHTS RESERVED</p></div>
+</footer>
+<!--<div class='back-to-top' id='back-to-top' title='Back to top'><i class='fa fa-chevron-up'></i></div>-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+<script type="text/javascript" src="../script/js.js">
+</script>
+</body>
+</html>

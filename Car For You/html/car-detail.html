@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Thuê Xe</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">-->
+    <link rel="stylesheet" type="text/css" href="../font-awesome-4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:600,600i,700,700i,800,800i|Ubuntu&amp;subset=vietnamese"
+          rel="stylesheet">
+</head>
+<body>
+<header class="main_header">
+    <div class="top_header">
+        <div class="container">
+            <div class="support topHeader">
+                <div id="phoneNumber">0974 974 647</div>
+                <div id="mailForMe">manhdo.it@gmail.com</div>
+            </div>
+            <div class="login topHeader">
+                    <span class="pull-right">
+                        <div class="before-log">
+                         <button data-toggle="modal" data-tabs="login" data-target=".user-modal">Đăng nhập</button>
+                         <button data-toggle="modal" data-tabs="signup" data-target=".user-modal">Đăng ký</button>
+                     </div>
+                     <div class="logged">
+
+                         <img src="../images/accout_picture.jpg">
+                         <span class="name_user">Nguyễn Mạnh Đô</span>
+                         <div class="dropdown">
+
+                          <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown"><span
+                                  class="glyphicon glyphicon-align-justify"></span></button>
+                            <ul class="dropdown-menu dropdown-menu-right">
+                               <li><a href="user-account.html">Quản lý tài khoản</a></li>
+                               <li><a id="logout-btn" href="#">Đăng xuất</a></li>
+                           </ul>
+                       </div>
+                   </div>
+               </span>
+            </div>
+        </div>
+        <div class="modal fade user-modal" tabindex="-1">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li id="login-indicator" class="active">
+                            <a href="#login" role="tab" data-toggle="tab">Đăng nhập</a>
+                        </li>
+                        <li id="signup-indicator">
+                            <a href="#signup" role="tab" data-toggle="tab">Đăng ký</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane active fade in" id="login">
+                            <form>
+                                <div class="input-field e-mail">
+                                    <input type="email" name="Email" id="email_" class="" placeholder="Email"/>
+                                </div>
+                                <div class="input-field">
+                                    <input type="password" name="Password" id="password" class="pass-word"
+                                           placeholder="Mật khẩu"/>
+                                </div>
+                                <div class="input-field check-field">
+                                    <input type="checkbox" id="remember_user" name="remember"/><label
+                                        for="remember_user">Ghi nhớ tài
+                                    khoản</label><br/>
+                                </div>
+                                <div class="input-field">
+                                    <button id="login-btn" data-dismiss="modal" value="Đăng nhập">Đăng Nhập</button>
+                                </div>
+                                <!--<button data-toggle="modal" data-target="#reset-password" data-dismiss="modal"-->
+                                <!--class="btn btn-default"><i class="fa fa-question-circle-o"></i> Quên mật khẩu?-->
+                                <!--</button>-->
+                            </form>
+                        </div>
+                        <div role="tabpanel" class="tab-pane fade" id="signup">
+                            <form>
+                                <div class="input-field">
+                                    <input type="text" name="Name" id="name" placeholder="Họ tên"/>
+                                </div>
+                                <div class="input-field">
+                                    <input type="text" name="Phone" id="phone" placeholder="Số điện thoại"/>
+                                </div>
+                                <div class="input-field">
+                                    <input type="text" name="Phone" id="address" placeholder="Địa Chỉ"/>
+                                </div>
+                                <div class="input-field">
+                                    <input type="email" name="Email" id="email" class="e-mail" placeholder="Email"/>
+                                </div>
+                                <div class="input-field">
+                                    <input type="password" name="Password" id="password_" placeholder="Mật khẩu"/>
+                                </div>
+                                <div class="input-field check-field">
+                                    <input type="checkbox" id="remember" name="remember"/><label for="remember">Hiển thị
+                                    mật
+                                    khẩu</label><br/>
+                                </div>
+                                <div class="input-field ">
+                                    <button id="signup-btn" type="submit" value="Đăng ký">Đăng Ký</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--********************************#navigation************************-->
+    <nav class="navbar navbar-default">
+
+        <div class="container">
+
+            <div class="logo">
+                <a href="#">
+                    <img src="../images/logo-1.png" alt="">
+                </a>
+            </div>
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li><a href="car-list.html">Danh sách xe</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Liên hệ</a></li>
+
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+</header>
+<section class="car-detail-body">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="option-bar  details-option-bar clearfix">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                            <div class="section-heading">
+                                <div class="media">
+                                    <div class="media-left">
+                                        <i class="fa fa-car" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="media-body hidden-xs">
+                                        <h4>Range Rover SVAutobiography</h4>
+                                        <div class="border"></div>
+                                        <p>Chi tiết xe Range Rover SVAutobiography</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                            <div class="header-price">
+                                <h3><span class="hidden-xs">Giá thuê:</span> 399.500<sup>đ</sup>/ngày</h3>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                <div class="car-details sidebar-widget">
+                    <!-- bootstrap carousel -->
+                    <div class="slideshow-container">
+
+                        <div class="mySlides fade-slide">
+                            <!--<div class="numbertext">1 / 3</div>-->
+                            <img src="../images/detail-car-9.jpg" style="width:100%">
+                        </div>
+
+                        <div class="mySlides fade-slide">
+                            <!--<div class="numbertext">2 / 3</div>-->
+                            <img src="../images/detail-car-1.jpg">
+                        </div>
+
+                        <div class="mySlides fade-slide">
+                            <!--<div class="numbertext">3 / 3</div>-->
+                            <img src="../images/detail-car-2.jpg">
+
+                        </div>
+                        <div class="mySlides fade-slide">
+                            <!--<div class="numbertext">3 / 3</div>-->
+                            <img src="../images/detail-car-3.jpg">
+
+                        </div>
+
+                        <div class="mySlides fade-slide">
+                            <!--<div class="numbertext">3 / 3</div>-->
+                            <img src="../images/detail-car-4.jpg">
+
+                        </div>
+                        <div class="mySlides fade-slide">
+                            <!--<div class="numbertext">3 / 3</div>-->
+                            <img src="../images/detail-car-5.jpg">
+
+                        </div>
+                        <div class="mySlides fade-slide">
+                            <!--<div class="numbertext">3 / 3</div>-->
+                            <img src="../images/detail-car-6.jpg">
+
+                        </div>
+                        <div class="mySlides fade-slide">
+                            <!--<div class="numbertext">3 / 3</div>-->
+                            <img src="../images/detail-car-7.jpg">
+
+                        </div>
+                        <div class="mySlides fade-slide">
+                            <!--<div class="numbertext">3 / 3</div>-->
+                            <img src="../images/detail-car-8.jpg">
+
+                        </div>
+
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                    </div>
+                    <br>
+
+                    <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                        <span class="dot" onclick="currentSlide(4)"></span>
+                        <span class="dot" onclick="currentSlide(5)"></span>
+                        <span class="dot" onclick="currentSlide(6)"></span>
+                        <span class="dot" onclick="currentSlide(7)"></span>
+                        <span class="dot" onclick="currentSlide(8)"></span>
+                        <span class="dot" onclick="currentSlide(9)"></span>
+                    </div>
+
+                </div>
+                <button class="btn-datxe">Đặt xe</button>
+                <div class="account-setting">
+                    <ul class="nav-account">
+                        <li class="active"><a href="#profile" data-toggle="tab">Bảng giá thuê xe</a></li>
+                        <li><a href="#car-posted" data-toggle="tab">Điều kiện thuê xe</a></li>
+                        <li><a href="#post-new-car" data-toggle="tab">Giới thiệu</a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div id="profile" class="tab-pane fade in active">
+                            <div class="table-responsive">
+                                <table>
+                                    <tbody>
+                                    <tr>
+                                        <td><strong>Sân bay</strong></td>
+                                        <td><span"><strong>500k/3h/2 chiều</strong></span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Nội thành &lt; 80km</strong></td>
+                                        <td><span><strong>800 000/ngày</strong></span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Ngoại tỉnh &lt;200km</strong></td>
+                                        <td><span><strong>900 000-1&nbsp;triệu/ngày</strong></span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>&gt;200km</strong></td>
+                                        <td><span><strong>5 000/km</strong></span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Phát sinh km</strong></td>
+                                        <td><span><strong>5 000/km</strong></span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Phát sinh giờ</strong></td>
+                                        <td><span><strong>50 000/h</strong></span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>THUÊ TỰ LÁI</strong></td>
+                                        <td><span><strong>900k-1 triệu/ngày</strong></span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>THUÊ XE THÁNG</strong></td>
+                                        <td><span><strong>Liên hệ</strong></span></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2" width="638"><strong>LƯU Ý:</strong><br>
+                                            Giá trên đã bao gồm xăng xe, lái xe<br>
+                                            Giá trên không bao gồm VAT<br>
+                                            Giá sân bay đã bao gồm bãi sân bay, đón/trả nội thành Hà Nội (không quá 2
+                                            điểm)<br>
+                                            <strong>Giá trên có thể tăng/giảm tùy vào thời điểm đặt xe</strong></td>
+                                    </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div id="car-posted" class="tab-pane fade">
+                            <div>
+                                <ul>
+                                    <li><h4>Lưu ý khi thuê xe tự lái</h4></li>
+                                    <li>
+                                        <p>Bạn phải có bằng lái xe hợp lệ và là bản gốc</p></li>
+                                    <li>
+                                        <p>Sổ hộ khẩu bản chính</p>
+                                    </li>
+                                    <li>
+                                        <p>Chứng minh thư nhân dân</p>
+                                    </li>
+                                    <li>
+                                        <p>Tài sản ký cược là:</p>
+                                    </li>
+                                    <li>
+                                        <p>Chiếc xe máy trị giá trên 20 triệu + đăng ký xe hoặc đặt cọc tiền mặt 20-30
+                                            triệu </p>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+                        <div id="post-new-car" class="tab-pane fade ">
+
+                        </div>
+
+                    </div>
+
+                    <!-- .tab_container -->
+                </div>
+            </div>
+            <div class="col-ld-4 col-md-4 col-sm-12 col-xs-12">
+                <div class="details-sidebar pad-div">
+                    <div class="sidebar-widget car-details-sidebar">
+                        <div class="section-heading option-bar">
+                            <div class="media">
+                                <div class="media-left">
+                                    <i class="fa fa-car" aria-hidden="true"></i>
+                                </div>
+                                <div class="media-body">
+                                    <h4>Thông tin xe</h4>
+                                    <div class="border"></div>
+                                    <!--<p>Kiểm tra thông tin thuê xe</p>-->
+                                </div>
+                            </div>
+                        </div>
+
+                        <ul>
+                            <li>
+                                <span>Hãng:</span>Land Rover
+                            </li>
+
+                            <li>
+                                <span>Đời xe;</span>2017
+                            </li>
+                            <li>
+                                <span>Màu xe:</span>Đen
+                            </li>
+                            <li>
+                                <span>Kiểu xe:</span>4 chỗ
+                            </li>
+
+
+                        </ul>
+                    </div>
+                    <div class="helping-Center sidebar-widget grae-color">
+                        <h2 class="title">Liên hệ đặt xe</h2>
+                        <ul class="contact-link">
+                            <li>
+                                <i class="fa fa-map-marker"></i>
+                                <span>Số 14, ngõ 4, Nguyễn Đình Chiểu, Hai Bà Trưng, Hà Nội</span>
+
+                            </li>
+                            <li>
+                                <i class="fa fa-phone"></i>
+                                <a href="#">
+                                    0974.974.647
+                                </a>
+                            </li>
+                            <li>
+                                <i class="fa fa-envelope-o"></i>
+                                <a href="">
+                                    manhdo.it@gmail.com
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+            </div>
+        </div>
+        <div class="comments-thread sidebar-widget clearfix car-details-body">
+            <div class="comments-thread clearfix">
+                <h2 class="title">Bình luận</h2>
+                <ul>
+                    <li>
+                        <div class="comment">
+                            <div class="avatar">
+                                <img src="../images/profile-01.jpeg" alt="profile-01">
+                            </div>
+                            <div class="comment-info">
+                                <h4>Bill Gate</h4>
+                                <span>
+                                        13:09 - <i>20/11/2016</i>
+                                    </span>
+                            </div>
+                            <p>Con xe này đẹp đấy</p>
+                            <div class="answer-comment">
+                                <span class="ans-comment-btn">Trả lời</span>
+                                <textarea class="answer-comment-text" name="message"></textarea>
+                            </div>
+
+                        </div>
+                        <!-- Comment -->
+                        <div class="comment">
+                            <div class="avatar">
+                                <img src="../images/profile-02.jpg" alt="profile-02">
+                            </div>
+                            <div class="comment-info">
+                                <h4>Barack Obama</h4>
+                                <span>
+                                        13:09 - <i>20/11/2016</i>
+                                    </span>
+                            </div>
+                            <p>Chú thu xếp lịch anh đặt xe tham dự APEC tháng sau nhé</p>
+                            <div class="answer-comment">
+                                <span class="ans-comment-btn">Trả lời</span>
+                                <textarea class="answer-comment-text" name="message"></textarea>
+                            </div>
+                        </div>
+                        <!-- Comment -->
+                        <div class="comment">
+                            <div class="avatar">
+                                <img src="../images/profile-03.jpg" alt="profile-03">
+                            </div>
+                            <div class="comment-info">
+                                <h4>Mark Zuckerberg</h4>
+                                <span>
+                                        13:09 - <i>20/11/2016</i>
+                                    </span>
+                            </div>
+                            <p>Bác OBAMA lấy xe khác đi con này em đặt rồi</p>
+                            <div class="answer-comment">
+                                <span class="ans-comment-btn">Trả lời</span>
+                                <textarea class="answer-comment-text" name="message"></textarea>
+                            </div>
+                        </div><!-- Comment -->
+
+                    </li>
+                    <li>
+                        <div class="comment">
+                            <div class="avatar">
+                                <img src="../images/profile-04.png" alt="profile-04">
+                            </div>
+                            <div class="comment-info">
+                                <h4>Warren Buffett</h4>
+                                <span>
+                                        13:05 - <i>21/09/2016</i>
+                                    </span>
+                            </div>
+                            <p>Các chú cũng đặt xe ở trang này ah</p>
+                            <div class="answer-comment">
+                                <span class="ans-comment-btn">Trả lời</span>
+                                <textarea class="answer-comment-text" name="message"></textarea>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- Comments thread end -->
+            <div class="contact-form">
+
+                <form action="">
+                    <div class="row">
+
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                            <div class="form-group">
+                                <textarea class="input-text" name="message" placeholder="viết bình luận"></textarea>
+                            </div>
+                            <div class="form-group Btn">
+                                <button type="submit" class="btn btn-submit">Bình luận</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!--******************Comment********************-->
+</section>
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-4 col-md-4">
+                <div class="heading-footer">
+                    <h3>TechMaster VietNam</h3>
+                </div>
+                <ul class="list-default">
+                    <li class="address">
+                        <span class="glyphicon glyphicon-map-marker" aria-hidden="true">ngõ 4, Nguyễn Đình Chiểu, Hai Bà Trưng, Hà Nội
+                        </span>
+                    </li>
+                    <li><span class="glyphicon glyphicon-globe" aria-hidden="true"></span><a
+                            href="#">www.techmaster.vn</a></li>
+                </ul>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-4">
+                <div class="heading-footer">
+                    <h3>Về Chúng Tôi</h3>
+                </div>
+
+                <ul class="list-default">
+                    <li><span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span><a href="#">Việc Làm</a>
+                    </li>
+                    <li>
+                    <li><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span><a href="#">Giới
+                        Thiệu</a></li>
+
+                </ul>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-4">
+                <div class="heading-footer">
+                    <h3>Hỗ Trợ</h3>
+                </div>
+
+                <ul class="list-default">
+
+                    <li><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>0974.974.647</li>
+                    <li><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>manhdo.it@gmail.com</li>
+
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <div class="reserved"><p>© 2017 DESIGNED BY <span>manhdo.it</span>. ALL RIGHTS RESERVED</p></div>
+</footer>
+<!--<div class='back-to-top' id='back-to-top' title='Back to top'><i class='fa fa-chevron-up'></i></div>-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="../script/js.js">
+</script>
+
+<script>
+//    var slideIndex = 1;
+//    showSlides(slideIndex);
+//
+//    function plusSlides(n) {
+//        showSlides(slideIndex += n);
+//    }
+//
+//    function currentSlide(n) {
+//        showSlides(slideIndex = n);
+//    }
+//
+//    function showSlides(n) {
+//        var i;
+//        var slides = document.getElementsByClassName("mySlides");
+//        var dots = document.getElementsByClassName("dot");
+//        if (n > slides.length) {
+//            slideIndex = 1
+//        }
+//        if (n < 1) {
+//            slideIndex = slides.length
+//        }
+//        for (i = 0; i < slides.length; i++) {
+//            slides[i].style.display = "none";
+//        }
+//        for (i = 0; i < dots.length; i++) {
+//            dots[i].className = dots[i].className.replace(" active", "");
+//        }
+//        slides[slideIndex - 1].style.display = "block";
+//        dots[slideIndex - 1].className += " active";
+//    }
+</script>
+</body>
+</html>

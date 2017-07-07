@@ -1,0 +1,413 @@
+body{
+    /*font-family: 'Open Sans', sans-serif;*/
+    font-family: "Times New Roman",sans-serif;
+}
+ul, li{
+    list-style: none;
+}
+#wrapper{
+    overflow: hidden;
+}
+#top-header{
+    background-image: url('../images/bg-banner.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+#logo{
+    position: relative;
+}
+.logo-img{
+    position: absolute;
+    left:0;
+    z-index: 9999;
+}
+#social-bar{
+    background-color: #fff;
+}
+.social-bar, #navigation{
+    font-family: 'Open Sans', sans-serif;
+}
+.social-bar{
+    /*display: inline-table;*/
+    text-align: center;
+    height: 34px;
+    line-height: 34px;
+    font-size: 15px;
+
+}
+.social-item{
+    margin: 25px;
+}
+.social-item:before{
+    font-family: FontAwesome;
+    color: #e7a331;
+    padding: 10px;
+}
+.order-text:before{
+    content: '\f017';
+}
+.order-number:before{
+    content: '\f095';
+}
+
+.order-text{
+    margin-left: 200px;
+}
+.social-link{
+    float: right;
+}
+.social-link a{
+    color: #e7a331;
+    padding-right: 5px;
+}
+.navbar{
+    background-color: rgba(0, 0, 0, 0.5);
+    /* border-color: #e7e7e7; */
+    border: none;
+    border-radius: 0;
+}
+.navbar .collapse{
+    float: right;
+    padding-right: 0;
+    font-size: 17px;
+}
+.navbar-default .navbar-nav li a{
+    line-height: 60px;
+    color: #fff;
+}
+/*Theem hover cho navigation o been duowi day*/
+.navbar-default .navbar-nav>li>a:hover{
+    color: #e7a331;
+    transition: all ease .3s;
+}
+.navbar-default .navbar-nav>.active>a:hover,.navbar-default .navbar-nav>.active>a{
+    color: #e7a331;
+    background: none;
+}
+
+.booking{
+    line-height: 90px;
+    padding: 10px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #e7a331;
+    transition: all ease .3s;
+}
+.booking:hover{
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #e7a331;
+    transition: all ease .3s;
+}
+/*****Banner******/
+#banner{
+    margin-top: 180px;
+    min-height: 500px;
+    color: #fff;
+    text-align: center;
+}
+#banner .banner-heading{
+    font-family: 'Pacifico', cursive;
+    font-size: 8em;
+    margin-bottom: 3rem;
+    text-shadow: 2px 4px 3px #000;
+}
+#banner .banner-content{
+    /*font-family: 'Times New Roman';*/
+    font-size: 2.5rem;
+}
+#banner .click-here>.booking{
+    border: 2px solid #fff;
+    color: #fff;
+    font-size: 2rem;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+#banner .click-here>.booking:hover{
+    border: 2px solid #e7a331;
+    color: #e7a331;
+    /*transition: all ease.3s;*/
+    text-decoration: none;
+}
+/***********************************End banner***********************************/
+
+/*************************************about*********************************/
+.wrap-content{
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    /*z-index: 1;*/
+}
+.about{
+    padding: 100px 0;
+    color: #000;
+    min-height: 650px;
+    background-image: url("../images/bg-about.jpg");
+}
+.about-image img{
+    width: 100%;
+}
+.content-title h2{
+    font-family: 'Pacifico', cursive;
+    font-size: 3rem;
+}
+.content-heading h1{
+    /*font-family: "Times New Roman";*/
+text-transform: uppercase;
+    font-size: 2.8em;
+}
+.side-bar{
+    position: relative;
+    z-index: 9999;
+}
+.btn-about{
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color: #e7a331;
+    color: #fff;
+    transition: all ease 1s;
+    border:none;
+}
+.btn-about:hover{
+    background: #fff;
+    color: #e7a331;
+    transition: all ease 1s;
+    border:none;
+}
+.chili-img{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 22;
+
+}
+.chili-img-left{
+    left: 0;
+    bottom: -170px;
+
+
+}
+/********************End About***********************/
+/**********************************Special Recipes***********************************/
+#special-recipes{
+    padding: 100px 0;
+    background-image: url("../images/special-bg.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+.special-article{
+    max-width: 535px;
+    background-image: url("../images/bg-about.jpg");
+}
+
+.left-content{
+    max-width: 535px;
+    padding: 10px 50px;
+    position: absolute;
+    bottom: 10em;
+    z-index: 1111111;
+    background-image: url("../images/bg-about.jpg");
+}
+.right-content{
+    float: right;
+}
+.about-content{
+    /*position: relative;*/
+}
+.clear-bold{
+    clear: both;
+}
+/**********************************Delightfull***********************************/
+#delightful{
+    min-height: 1000px;
+    background-image: url("../images/bg-about.jpg");
+    text-align: center;
+    padding: 100px 0;
+}
+.delight-item{
+    padding: 20px 0;
+
+}
+.wrap-item{
+    font-family: "Times New Roman";
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+}
+.wrap-item img{
+    width: 100%;
+}
+.delight-text{
+    padding: 30px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    color: #fff;
+    transition: all ease .5s;
+    transform: scale(0.5);
+    opacity: 0;
+}
+.wrap-item:hover .delight-text{
+    transition: all ease 1s;
+    transform: scale(1);
+    opacity: 1;
+}
+
+.name-food, .price-food{
+    font-size: 3rem;
+}
+.price-food{
+    font-size: 4rem;
+}
+.delight-effect{
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+}
+/***********end DelightFull***********/
+
+/**********************************Menu Delicius***********************************/
+#menu-delicius{
+    background-image: url("../images/bg-menu.jpg") ;
+    /*min-height: 2000px;*/
+    /*background-size: auto;*/
+    padding: 100px 0;
+}
+.menu-heading{
+    color: #fff;
+    text-align: center;
+}
+.wrap-content-menu{
+    margin-top: 50px;
+
+}
+.wrap-content-menu > .row{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.side-right{
+    float: right;
+}
+.side-left{
+    float: left;
+}
+.wrap-div{
+    /*position: relative;*/
+}
+.menu-image{
+    position: absolute;
+    top: -50px;
+
+}
+.menu-list{
+    background: #fff;
+    /*position: absolute;*/
+    /*right: 0;*/
+    /*!* bottom: 0; *!*/
+    margin-top: -15px;
+    padding: 50px;
+}
+.side-bar-content ul li{
+    /*background-image: url('../images/menu-icon.png');*/
+    /*background-repeat: no-repeat;*/
+    height: 52px;
+    line-height: 52px;
+margin-top: 10px;
+    height: 52px;
+    line-height: 52px;
+    position: relative;
+    list-style: none;
+}
+.side-bar-text .price{
+    font-weight: bold;
+    float: right;
+}
+.side-bar-content ul li:before{
+    content: url('../images/menu-icon.png');
+    position: absolute;
+    left: 0;
+}
+.side-bar-text{
+    margin-left: 55px;
+
+}
+.side-bar-text span{
+    /*width: 50%;*/
+}
+
+
+
+/**********************************Mobile App***********************************/
+#mobile-app{
+    background-image: url('../images/mobile-bg.jpg');
+
+}
+.wrap-mobile{
+    background: rgba(0, 0, 0, 0.5);
+    padding-top: 50px;
+    padding-bottom: 100px;
+    color: #fff
+}
+.mobile-img {
+    float: right;
+}
+.mobile-text{
+    text-transform: uppercase;
+}
+.mobile-text h1{
+    font-size: 9rem;
+}
+.mobile-text span{
+    font-size: 3rem;
+}
+.icon-mobile{
+    padding-top: 50px;
+}
+/**********************************Footer***********************************/
+#footer{
+    background-image: url("../images/footer-bg.jpg");
+    color: #fff;
+
+}
+.footer-wrap .container{
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+.footer-top{
+
+}
+.address, .working-hour{
+    text-align: center;
+
+}
+.address .content-title, .working-hour .content-title{
+    margin-bottom: 50px;
+}
+.address .social-link{
+    float: none;
+    font-size: 2rem;
+    margin-top: 10rem;
+}
+.feedback-form{
+    padding: 0 10px 10px 10px;
+}
+.feedback-form input, .feedback-form textarea{
+    width: 100%;
+    border-radius: 5px;
+    background-color: #323232;
+    border: none;
+    outline: none;
+    padding: 10px 10px 10px 20px;
+    margin: 5px 0;
+}
+.messenger-text{
+    min-height: 100px;
+}
+.copy-right{
+    background: #0d0d0d;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+}

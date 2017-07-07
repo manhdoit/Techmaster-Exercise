@@ -1,7 +1,7 @@
 /**
  * Created by nguyenmanhdo on 7/7/17.
  */
-$(document).ready(function () {
+
     function htmlScrol(){
         $('.delightful-content > .row:nth-child(1)').addClass('fade-in-down');
         $('.delightful-content > .row:nth-child(2)').addClass('fade-in-up');
@@ -27,5 +27,25 @@ $(document).ready(function () {
         $('.fade-in-down').AniView(options);
         $('.fade-in-up').AniView(options)
     }
+
+
+    function smoothLyScroll() {
+
+        $('.nav a[href^="#"').click(function(){
+
+            if (this.has !==""){
+                event.preventDefault();
+                var hash = this.hash;
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 800, function(){
+                    window.location.hash = hash;
+                })
+            }
+        })
+    }
+
+$(document).ready(function () {
     htmlScrol();
+    smoothLyScroll();
 })

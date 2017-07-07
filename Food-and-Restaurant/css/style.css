@@ -66,6 +66,11 @@ ul, li{
     border: none;
     border-radius: 0;
 }
+.navbar-default .navbar-nav .active{
+    /*background-color: #e7a331;*/
+    color: #e7a331;
+    /*background-color: red;*/
+}
 .navbar .collapse{
     float: right;
     padding-right: 0;
@@ -80,9 +85,9 @@ ul, li{
     color: #e7a331;
     transition: all ease .3s;
 }
-.navbar-default .navbar-nav>.active>a:hover,.navbar-default .navbar-nav>.active>a{
-    color: #e7a331;
-    background: none;
+.navbar-default .navbar-nav > a.active{
+    color: #e7a331!important;
+    /*background: none;*/
 }
 
 .booking{
@@ -179,12 +184,16 @@ text-transform: uppercase;
     position: absolute;
     right: 0;
     bottom: 0;
-    z-index: 22;
+    z-index: 2;
 
+}
+#special-recipes .chili-img-left{
+    bottom: -170px;
 }
 .chili-img-left{
     left: 0;
-    bottom: -170px;
+    bottom: 0;
+
 
 
 }
@@ -224,6 +233,11 @@ text-transform: uppercase;
     background-image: url("../images/bg-about.jpg");
     text-align: center;
     padding: 100px 0;
+}
+.delightful-content{
+    position: relative;
+    z-index: 3;
+
 }
 .delight-item{
     padding: 20px 0;
@@ -266,6 +280,9 @@ text-transform: uppercase;
     height: 100%;
     background: rgba(0, 0, 0, 0.7);
 }
+#delightful .chili-img-right{
+    bottom: -160px;
+}
 /***********end DelightFull***********/
 
 /**********************************Menu Delicius***********************************/
@@ -286,6 +303,8 @@ text-transform: uppercase;
 .wrap-content-menu > .row{
     padding-top: 100px;
     padding-bottom: 100px;
+    position: relative;
+    z-index: 1000;
 }
 .side-right{
     float: right;
@@ -336,7 +355,10 @@ margin-top: 10px;
 .side-bar-text span{
     /*width: 50%;*/
 }
-
+#menu-delicius .chili-img-left img{
+    transform: rotateY(180deg);
+    z-index: 1;
+}
 
 
 /**********************************Mobile App***********************************/
@@ -369,11 +391,14 @@ margin-top: 10px;
 #footer{
     background-image: url("../images/footer-bg.jpg");
     color: #fff;
+    position: relative;
 
 }
 .footer-wrap .container{
     padding-top: 50px;
     padding-bottom: 30px;
+    position: relative;
+    z-index: 9999;
 }
 .footer-top{
 
@@ -404,6 +429,9 @@ margin-top: 10px;
 }
 .messenger-text{
     min-height: 100px;
+}
+#footer .chili-img{
+    top: 70px;
 }
 .copy-right{
     background: #0d0d0d;

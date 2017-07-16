@@ -80,9 +80,22 @@ body{
 }
 .social-bar a{
 	color: #fff;
+	transition: all ease-in-out .5s;
 }
 .social-icon{
 	margin: 0 2rem;
+}
+.facebook:hover{
+	color: #3b5998;
+	transition: all ease-in-out .5s;
+}
+.instagram:hover{
+	color: #333;
+	transition: all ease-in-out .5s;
+}
+.twiter:hover{
+	color: #2aaae0;
+	transition: all ease-in-out .5s;
 }
 .btn-download{
 	border: 1px solid #fff056;

@@ -3,7 +3,7 @@ body{
 	font-family: 'Roboto', sans-serif;  
 	background: #f5f5f5;                   
 }
-#header{
+#header,#contact{
 	background-image: url('../images/bg-header-1.jpeg');
 	background-size: cover;
 	background-attachment: fixed;
@@ -83,6 +83,19 @@ body{
 }
 .social-icon{
 	margin: 0 2rem;
+}
+.btn-download{
+	border: 1px solid #fff056;
+    margin-top: 50px;
+    text-transform: uppercase;
+    color: #fff;
+    transition: all ease 0.5s;
+}
+.btn-download:hover{
+	background-color: #f5f5f5;
+
+	color: #000;
+	transition: all ease 0.5s;
 }
 /*************************End Header*****************************/
 /*************************About**********************************/
@@ -364,8 +377,12 @@ body{
   	opacity: 1;
   }
 /*****************************Contact*************************************/
+/*#contact{
+	    background-image: url(../images/contact-bg.jpg);
+}*/
 .wrap-contact{
-	background-color: #191919;
+	
+	background-color: rgba(0, 0, 0, 0.5);
 	padding-bottom: 50px;
 	color: #fff;
 }
@@ -397,7 +414,36 @@ body{
 	content:'\f1d8';
 	padding-right: 5px
 }
-
+.heading-text-contact h1{
+	    margin-top: -5px;
+}
+#contact table{
+	line-height: 30px;
+    font-size: 14px;
+}
+#contact table td{
+	padding-left: 15px;
+}
+#contact table th{
+	margin-left: 10px;
+}
+#contact table th:before{
+	font-family: FontAwesome;
+	margin-right: 10px;
+	font-size: 1em;
+}
+#contact table .ht:before{
+	content: '\f2c0';
+}
+#contact table .dc:before{
+	content: '\f015';
+}
+#contact table .dt:before{
+ content: '\f095';
+}
+#contact table .em:before{
+content: '\f003';
+}
 
 
 
